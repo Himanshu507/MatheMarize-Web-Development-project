@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Function - One-One & Onto Function | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn one-one, many-one and onto functions, periodic function, composition of functions and inverse of function.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,maths, study maths, mathematics, online study material,function, domain, codomain, Range of a function, Polynomial function, Algebraic Function, Rational Function,Trignometric Functions,Sine Function,Cosine Function,Tangent Function,Cosecant Function,Secant Function,Cotangent Function, Exponential and Logarithmic function,Absolute Value Function,Signum Function,Greatest integer or step up function,Fractional part function,Identity function,Constant function,Equal or Identical Function,Homogeneous Function,Bounded Function,Implicit and Explicit Function,Classification of functions,One-One Function,Injective mapping,Many-one function,Onto Function,Surjective mapping,Into function,Composite of Uniformly & Non-Uniformly defined function,Properties of composite functions,Inverse of a Function,Properties of inverse functions,Odd & Even Function,Periodic Function">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <style>
+      table{
+      max-width:100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,tr,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+      
+    }
+      .column1 {
+      flex: 33.33%;
+      padding: 5px;
+    }
+    .row1{
+      display: flex;
+    }
+    @media screen and (max-width: 600px) {
+      
+  .row1{
+    flex-direction: column;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">FUNCTION</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+
+              <h2 id="subheading1"style="font-size:20px;text-align:left;"><br>Classification of functions
+		      </h2>
+
+              <h2 id="subheading2"style="font-size:17px;text-align:left;">One-One Function(Injective mapping)</h2>
+
+              <p>A function f : A \(\rightarrow\) B is said to be one-one function or injective mapping if different elements of A have different f images in B.<br><br>
+              Thus there exist \(x_1\), \(x_2\) \(\in\) A & f(\(x_1\)), f(\(x_2\)) \(\in\) B, f(\(x_1\)) = f(\(x_2\)) \(\iff\) \(x_1\) = 
+              \(x_2\) or \(x_1\) \(\ne\) \(x_2\) \(\iff\) f(\(x_1\)) \(\ne\) f(\(x_2\)).
+              </p>
+
+              <h2 id="subheading3"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Many-one function(not injective)
+              </h2>
+
+              <p>A function f : A \(\rightarrow\) B is said to be a many one function if two or more elements of A have the same image f image in B.<br><br>
+              Thus f : A \(\rightarrow\) B is many one there exist \(x_1\), \(x_2\) \(\in\) A & f(\(x_1\)) = f(\(x_2\)) but \(x_1\) \(\ne\) 
+              \(x_2\).
+              </p>
+
+              <blockquote class="blockquote">
+		        <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+		        <p style="font-size:16px;font-family:lucida;text-align:left;">
+		        (i)&nbsp;&nbsp; If a line parallel to x-axis cuts the graph of the function atmost at one point, then the function is one-one.
+		        <br>
+		        (ii)&nbsp;&nbsp; If any line parallel to x-axis cuts the graph of the function atleast at two points, then f is many-one.<br>
+		        (iii)&nbsp;&nbsp; If continous function f(x) is always increasing or decreasing in whole domain, then f(x) is one-one.<br>
+		        (iv)&nbsp;&nbsp; All linear function are one-one.<br>
+		        (v)&nbsp;&nbsp; All trignometric function in their domain are many one.<br>
+		        (vi)&nbsp;&nbsp; All even degree polynomials are many one.<br>
+		        (vii)&nbsp;&nbsp; Linear by linear is one-one.<br>
+		        (viii)&nbsp;&nbsp; Quadratic by quadratic with no common factor is many one.
+		        </p>
+		    </blockquote>
+
+              <h2 id="subheading4"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Onto Function(Surjective mapping)</h2>
+
+              <p>If the function f : A \(\rightarrow\) B is such that each element in B (co-domain) is the f image of atleast one element in A, then we say that f is a function from A 'onto' B. Thus f : A \(\rightarrow\) B is surjective iff \(\forall\) b \(\in\) B, \(\exists\), some a \(\in\) A such that f(a) = b.
+              </p>
+
+            <blockquote class="blockquote">
+		        <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+		        <p style="font-size:16px;font-family:lucida;text-align:left;">
+		        If range is same as codomain, then f is onto.
+		        </p>
+		    </blockquote>
+
+		    <h2 id="subheading5"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Into function</h2>
+
+            <p>If the function f : A \(\rightarrow\) B is such that there exist atleast one element in codomain which is not the image of any element in domain, then f(x) is into.
+            </p>
+
+		     <blockquote class="blockquote">
+		        <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+		        <p style="font-size:16px;font-family:lucida;text-align:left;">
+		        (i)&nbsp;&nbsp; A polynomial function of degree even define from R \(\rightarrow\) R will always be into.
+		        <br><br>
+		        (ii)&nbsp;&nbsp; A polynomial function of degree odd defined from R \(\rightarrow\) R  will always be onto
+		        <br><br>
+		        (iii)&nbsp;&nbsp; Quadratic by quadratic without any common factor define from R \(\rightarrow\) R is allways an into function.
+		        </p>
+		    </blockquote>
+
+		    <p><b>Thus a function can be of these four types :</b><br><br>
+		    (i)&nbsp;&nbsp; one-one onto (Injective and Surjective)(Also known as <b>Bijiective</b> mapping)
+		    <br>
+		    (ii)&nbsp;&nbsp; one-one into (Injective but not surjective)
+		    <br>
+		    (iii)&nbsp;&nbsp; many-one onto (surjective but not injective)
+		    <br>
+		    (iv)&nbsp;&nbsp; many-one into (neither surjective nor injective)
+            </p>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> Let f : R \(\rightarrow\) R be a function defined as f(x) = \(2x^3 + 6x^2\) + 12x +3cosx - 4sinx; then f is-</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>We have f(x) = \(2x^3 - 6x^2\) + 12x + 3cosx - 4sinx<br><br>
+              \(\implies\) f'(x) = \(6x^2 - 12x\) + 12 - 3sinx - 4cosx<br><br>
+              \(\implies\) \(6x^2 - 12x\) + 12 = 6(\(x-1)^2\) + 6 = g(x) and 3sinx + 4cosx = h(x)<br><br>
+              range of g(x) = [6, \(\infty\))<br><br>
+              range of h(x) = [-5, 5]<br><br>
+              hence f'(x) always lies in the interval [1, \(\infty\))<br><br>
+              \(\implies\) f'(x) > 0<br><br> 
+              Hence f(x) is increasing i.e. one-one function<br><br>
+              Now x \(\rightarrow\) \(\infty\) \(\implies\) f \(\rightarrow\) \(\infty\) & x \(\rightarrow\) -\(\infty\) \(\implies\) 
+              f \(\rightarrow\) -\(\infty\) & f(x) is continous.<br><br>
+              hence its range is R \(\implies\) f is onto so f is bijective.</p><br>
+              <button class="c" onclick="window.location.href='/as/examples/function-examples.html'">More Examples</button>
+              <button class="b" onclick="window.location.href='/as/questions/function-questions.html'">Try Questions</button>
+            </blockquote><br>
+
+		    <h2 id="subheading6"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Composite of Uniformly & Non-Uniformly defined function</h2>
+
+		    <p>Let f : A \(\rightarrow\) B & g : f : B \(\rightarrow\) C be two functions. Then the function gof : f : A \(\rightarrow\) C defined by (gof)(x) = g(f(x)) \(\forall\) x \(\in\) A is called the composite of the two function f & g.<br><br>
+		    <b>Properties of composite functions</b><br>
+		    (a) In general composite of functions is not commutative i.e. gof \(\ne\) fog.<br>
+		    (b) The composition of functions is associative i.e. if f, g, h are three functions such that fo(goh) & (fog)oh are defined, then
+		    fo(goh) = (fog)oh.<br>
+		    (c) The composition of two bijections is a bijection i.e. if f & g are two bijections such that gof is defined, then gof is also a bijection.</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> If f(x) = \(x^2\) + 1, g(x) = \(1\over x-1\), then find (fog)(x).</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Now (fog)(x) = f(g(x)) = f(\(1\over x-1\)) = f(z), where z = \(1\over x-1\)<br><br>
+              = \(z^2 + 1\) &nbsp; &nbsp; &nbsp; [ \(\because\) f(x) = \(x^2 + 1\) ]<br><br>
+              = \(({1\over x-1})^2\) + 1 = \(1\over {(x-1)^2}\) + 1</p>
+            </blockquote>
+
+		    <h2 id="subheading7"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Inverse of a Function </h2>
+
+		    <p>Let f : A \(\rightarrow\) B be a one-one & onto function, then there exists a unique function g : B \(\rightarrow\) A such that
+		    f(x) = y \(\iff\) g(y) = x, \(\forall\) x \(\in\) A & y \(\in\) B. Then g is said to be inverse of f.<br><br>
+		    <b>Properties of inverse functions</b><br>
+		    (a) The inverse of bijection is unique.<br>
+		    (b) The inverse of bijection is also a bijection.<br>
+		    (c) If f & g are two bijections f : A \(\rightarrow\) B, g : B \(\rightarrow\) C then the inverse of gof exists and 
+		    \((gof)^{-1}\) = \(f^{-1}\)o\(g^{-1}\).</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> Let f : R \(\rightarrow\) R be defined by f(x) = \((e^x - e^{-x})\)/2. Is f(x) invertible?. If so, find its inverse. </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Let us check the invertibility of f(x) : <br><br>
+              (a) One-One : <br><br>
+              f(x) = \(1\over 2\)\((e^x - e^{-x})\) \(\implies\) f'(x) = \(1\over 2\)\((e^x + e^{-x})\)<br><br>
+              f'(x) > 0, f(x) is increasing function<br>
+              \(\therefore\) &nbsp; f(x) is one-one function.<br><br>
+              (b) Onto : <br><br>
+              As x tends to larger and larger values so does f(x) and when x \(\rightarrow\) \(\infty\), f(x) \(\rightarrow\) \(\infty\)<br>
+              Similarly as x \(\rightarrow\) -\(\infty\), f(x) \(\rightarrow\) -\(\infty\) i.e. 
+              -\(\infty\) < f(x) < \(\infty\) so long as x \(\in\) (-\(\infty\), \(\infty\))<br>
+              Hence the range of f is same as the set R. Therefore f(x) is onto.<br><br>
+              Since f(x) is both one-one and onto, f(x) is invertible.<br><br>
+              (c) To find \(f^{-1}\)(x) : Interchange x & y<br><br>
+              \(1\over 2\)\((e^y + e^{-y})\) = x \(\implies\) \(e^{2y} - 2xe^{y}\) - 1 = 0<br><br>
+              \(\implies\) &nbsp; \(e^y\) = \(2x \pm \sqrt{4x^2 + 4}\over 2\) \(\implies\) \(e^y\) = \(x \pm \sqrt{1 + x^2}\)<br><br>
+              Since \(e^y\) > 0, hence negative sign is ruled out and Hence \(e^y\) = \(x + \sqrt{1 + x^2}\)<br><br>
+              Taking logarithm, we have y = ln(x + \(\sqrt{1 + x^2}\)) or \(f^{-1}\)(x) = ln(x + \(\sqrt{1 + x^2}\))</p>
+            </blockquote>
+
+		    <h2 id="subheading8"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Odd & Even Function </h2>
+
+		    <p>Consider a function f(x) such that both x and -x are in its domain then<br><br>
+		    If f(-x) = f(x) then f is said to be an even function<br>
+		    If f(-x) = -f(x) then f is said to be an odd function</p>
+
+		    <h2 id="subheading9"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Periodic Function 
+		    </h2>
+
+		    <p>A function f(x) is called periodic if there exist a positive number T (T > 0), where T is the smallest such value called the period of the function such that f(x + T) = f(x), for all values of x, x + T within the domain of f.<br><br>
+		    </p><br>
+
+		    <blockquote class="blockquote">
+		        <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+		        <p style="font-size:16px;font-family:lucida;text-align:left;">
+		        (i)&nbsp;&nbsp; Odd powers of sinx, cosx, secx, cosecx are periodic with period 2\(\pi\).<br>
+		        (ii)&nbsp;&nbsp; None zero integral powers of tanx, cotx are periodic with period \(\pi\).<br>
+		        (iii)&nbsp;&nbsp; Non zero even powers or modulus of sinx, cosx, secx, cosecx are periodic \(\pi\).<br>
+		        (iv)&nbsp;&nbsp; f(T) = f(0) = f(-T), where 'T' is the period.<br>
+		        (v)&nbsp;&nbsp; if f(x) has period T then f(ax + b) has a period T/|a| (a \(\ne\) 0).<br>
+		        (vi)&nbsp;&nbsp; If f(x) & g(x) are periodic with period \(T_1\) & \(T_2\) respectively, then period of f(x) \(\pm\) g(x) is L.C.M of (\(T_1\), \(T_2\))<br>
+		        (vii)&nbsp;&nbsp; Every constant function is always periodic.<br>
+		        (viii)&nbsp;&nbsp; Inverse of a periodic function does not exist.
+		        </p>
+		    </blockquote>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Find the periods of the function f(x) = \(e^{ln(sinx)}\) + \(tan^3x\) - cosec(3x - 5)</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Period of \(e^{ln(sinx)}\) = \(2\pi\), \(tan^3x\) = \(\pi\)<br><br>
+              cosec(3x - 5) = \(2\pi\over 3\)<br><br>
+              \(\therefore\) &nbsp; Period = \(2\pi\)
+              </p>
+            </blockquote>
+
+		    <button class="prev" onclick="window.location.href='/as/function1.html'">PREV</button>
+        <button class="next" onclick="window.location.href='/as/inverse-trigonometric-function.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#subheading1" class="anchor">Classification of functions</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">One-One Function(Injective mapping)</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Many-one function(not injective)</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">Onto Function(Surjective mapping)</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor">Into function</a>
+                </li>
+                <li>
+                  <a href="#subheading6" class="anchor">Composite of Uniformly & Non-Uniformly defined function</a>
+                </li>
+                <li>
+                  <a href="#subheading7" class="anchor">Inverse of a Function</a>
+                </li>
+                <li>
+                  <a href="#subheading8" class="anchor">Odd & Even Function</a>
+                </li>
+                <li>
+                  <a href="#subheading9" class="anchor">Periodic Function</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Differentiability - Differentiable & Continuous | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn differentiablity of functions and how to check whether function is differentiable and continuous in given interval.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials, maths tutorials,right hand derivative, left hand derivative,
+  differentiability over an interval,maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">DIFFERENTIABILITY</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+
+              <h2 id="subheading1"style="font-size:17px;text-align:left;">Meaning of Derivative</h2>
+
+              <p style="border-bottom: 1px inset lightgrey;">The instantaneous rate of change of a fuction with respect to the dependent variable is called derivative. Let 'f' be a given function of one variable and let \(\Delta\)x denote a number (positive or negative) to be added to the number x. Let \(\Delta\)f denote the corresponding change of 'f' then \(\Delta\)f = f(x + \(\Delta\)x) - f(x)<br><br> &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; \(\implies\) \(\Delta f\over {\Delta x}\) = \(f(x + \Delta x) - f(x)\over {\Delta x}\)<br><br> If \(\Delta f\over {\Delta x}\) approaches a limit as \(\Delta\)x approaches zero, this limit is the derivative of 'f' at thr point x. The dervative of a function 'f' is a function; this function is denoted by symbols such as<br><br>&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; \(f^{'}(x)\), \(df\over {dx}\), \(d\over {dx}\)f(x) or \(df(x)\over {dx}\)<br><br>\(\implies\) \(df\over {dx}\) = \(\displaystyle{\lim_{\Delta x \to 0}}\)\(\Delta f\over {\Delta x}\) =  \(\displaystyle{\lim_{\Delta x \to 0}}\) \(f(x + \Delta x) - f(x)\over {\Delta x}\)<br><br>The derivative evaluated at a point a, is written, \(f^{'}(a)\), \({df(x)\over {dx}}|_{x = a}\), \(f^{'}(x)_{x = a}\)<br><br> </p>
+
+             <h2 id="subheading2"style="font-size:17px;text-align:left;">Differentiable at x=a (Existence of Derivative at x = a)</h2>
+
+             <h3 id="subheading3"style="font-size:16px;text-align:left;">(a) &nbsp; Right hand derivative</h3>
+
+             <p>The right hand derivative of f(x) at x = a denoted by \(f(a^+)\) is defined as<br><br> \(f^{'}(a^+)\) = \(\displaystyle{\lim_{h \to 0}}\) \(f(a + h) - f(a)\over h\), provided the limit exist and finite.(h > 0)</p>
+
+             <h3 id="subheading4"style="font-size:16px;text-align:left;">(b) &nbsp; Left hand derivative</h3>
+
+             <p> The left hand derivative of f(x) at x = a denoted by \(f(a^-)\) is defined as<br><br>\(f^{'}(a^-)\) = \(\displaystyle{\lim_{h \to 0}}\) \(f(a - h) - f(a)\over {-h}\), provided the limit exist and finite.(h > 0)<br><br>Hence f(x) is said to be derivable or differentiable at x = a. If \(f(a^+)\) = \(f^{'}(a^-)\) = finite quantity and it is denoted by \(f^{'}(a)\); where \(f^{'}(a)\) = \(f^{'}(a^+)\) = \(f^{'}(a^-)\) & it is called derivative or differential coefficient of f(x) at  x = a.</p>
+
+             <h2 id="subheading5"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br> Differentiable & Continuous</h2>
+
+             <p><b>Theorem : </b>If a function f(x) is derivable or differentiable at x = a, then f(x) is continuous at x = a.</p>
+
+
+            <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            (i) Differentiable \(\implies\) Continuous; Continuity \(\not\Rightarrow\) Differentiable; Not Differential \(\not\Rightarrow\) Not Continuous But Not Continuous \(\implies\) Not Differentiable<br>(ii) All polynomial, trignometric, logarithmic and exponential function are continuous and differentiable in their domains.<br>(iii) If f(x) & g(x) are differentiable at x = a then the function f(x) + g(x), f(x) - g(x), f(x).g(x) will also be differentiable at x = a & g(a) \(\ne\) 0 then the function \(f(x)\over {g(x)}\) will also be differentiable at x = a.</i>
+            </p>
+            </blockquote><br>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>If f(x) = {[cos\(\pi\)x], x \(\leq\) 1 and 2{x} - 1, x > 1} comment on the derivability at x = 1, where [ ] denotes greatest integer function & { } denotes fractional part function.</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>For differentiability at x = 1, we determine, \(f^{'}(1^-)\) and \(f^{'}(1^+)\).<br><br> \(f^{'}(1^-)\) = \(\displaystyle{\lim_{h \to 0}}\) \(f(1 - h) - f(1)\over {-h}\) = \(\displaystyle{\lim_{h \to 0}}\)\([cos(\pi - \pi h)] + 1\over {-h}\) = \(\displaystyle{\lim_{h \to 0}}\) \(-1 + 1\over {-h}\) = 0<br><br>\(f^{'}(1^+)\) = \(\displaystyle{\lim_{h \to 0}}\) \(f(1 + h) - f(1)\over h\) = \(\displaystyle{\lim_{h \to 0}}\)\(2[1 + h] - 1 + 1\over h\) = \(\displaystyle{\lim_{h \to 0}}\)\(2h\over h\) = 2<br><br>Hence f(x) is not differentiable at x = 1.</p><br>
+              <button class="c" onclick="window.location.href='/as/examples/differentiability-examples.html'">More Examples</button>
+              <button class="b" onclick="window.location.href='/as/questions/differentiability-questions.html'">Try Questions</button>
+            </blockquote><br>
+
+            <h2 id="subheading6" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Differentiability over an Interval</h2> 
+
+            <p>(a) &nbsp;f(x) is said to be differentiable over an open interval (a, b) if it is differentiable at each and every point of the open interval (a, b).<br><br>(b) &nbsp;f(x) is said to be differentiable over the closed interval [a, b] if :
+            <ul style="list-style-type:none;"><li>(i) &nbsp; f(x) is differentiable in (a,b) &</li>
+            <li>(ii) &nbsp; for the points a and b, \(f^{'}(a^+)\) & \(f^{'}(b^-)\) exist.</li></ul>
+            </p><br>
+            
+            <button class="prev" onclick="window.location.href='/as/continuity.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/statistics.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#subheading1" class="anchor">Meaning of Derivative</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">Existence of Derivative at x = a</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Right hand derivative</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor"> Left hand derivative</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor">Differentiability & Continuity</a>
+                </li>
+                <li>
+                  <a href="#subheading6" class="anchor">Differentiability over an Interval</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

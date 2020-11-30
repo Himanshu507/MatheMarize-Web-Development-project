@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Function - Signum & Greatest Integer Function | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn signum function, greatest integer function and fractional part function and also algebraic operations on functions.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,maths, study maths, mathematics, online study material,function, domain, codomain, Range of a function, Polynomial function, Algebraic Function, Rational Function,Trignometric Functions,Sine Function,Cosine Function,Tangent Function,Cosecant Function,Secant Function,Cotangent Function, Exponential and Logarithmic function,Absolute Value Function,Signum Function,Greatest integer or step up function,Fractional part function,Identity function,Constant function,Equal or Identical Function,Homogeneous Function,Bounded Function,Implicit and Explicit Function,Classification of functions,One-One Function,Injective mapping,Many-one function,Onto Function,Surjective mapping,Into function,Composite of Uniformly & Non-Uniformly defined function,Properties of composite functions,Inverse of a Function,Properties of inverse functions,Odd & Even Function,Periodic Function">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <style>
+      table{
+      max-width:100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,tr,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+      
+    }
+      .column1 {
+      flex: 33.33%;
+      padding: 5px;
+    }
+    .row1{
+      display: flex;
+    }
+    @media screen and (max-width: 600px) {
+      
+  .row1{
+    flex-direction: column;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">FUNCTION</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+
+              <h2 id="subheading1"style="font-size:17px;text-align:left;">(e) Exponential and Logarithmic function</h2>
+
+              <p>A function f(x) = \(a^x\)(a > 0), a \(\ne\) 1, x \(\in\) R is called an exponential function. The inverse of the exponential
+              function is called the logarithmic function, i.e. g(x) = \(log_ax\).<br><br>
+              Note that f(x) & g(x) are inverse of each other.<br><br>
+              <b>Domain </b> of \(a^x\) is R &nbsp; &nbsp; &nbsp; &nbsp; <b>Range</b> \(R^+\)<br><br>
+              <b>Domain </b> of \(log_ax\) is \(R^+\) &nbsp; &nbsp; &nbsp; &nbsp; <b>Range</b> R
+              </p>
+
+              <h2 id="subheading2"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(f) Absolute Value Function</h2>
+
+              <p>A function y = f(x) = |x| is called the absolute value function or modulus function. It is defined as :<br><br>
+              y = |x| = [x if x \(\le\) 0 &nbsp; & &nbsp; -x if x < 0]<br><br>
+              For f(x) = |x|, domain is R and range is [0,\(\infty\)]<br><br>
+              For  f(x) = \(1\over{|x|}\), domain is R - {0} and range is \(R^+\)
+              </p>
+
+              <h2 id="subheading3"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(g) Signum Function</h2>
+
+              <p>A function y = f(x) = Sgn(x) is defined as follows :<br><br>
+              y = f(x) = [ 1 for x > 0 &nbsp; & &nbsp; 0 for x = 0 &nbsp; & &nbsp; -1 for x < 0 ]<br><br>
+              <b>Domain :</b> R<br>
+              <b>Range :</b> [-1, 0, 1]
+              </p>
+
+              <h2 id="subheading4"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(h) Greatest integer or step up function</h2>
+
+              <p>The function y = f(x) = [x] is called the greatest integer function where [x] denotes the greatest integer less than or equal to x. Note that for :<br>
+              <table  style="font-size:16px;font-family:lucida;text-align:center;">
+              <tr>
+              <td>x</td>
+              <td>[x]</td>
+              </tr>
+              <tr>
+              <td>[-2,-1]</td>
+              <td>-2</td>
+              </tr>
+              <tr>
+              <td>[-1,0]</td>
+              <td>-1</td>
+              </tr>
+              <tr>
+              <td>[0,1]</td>
+              <td>0</td>
+              </tr>
+              <tr>
+              <td>[1,2]</td>
+              <td>1</td>
+              </tr>
+              </table><br>
+              <b>Domain :</b> R<br>
+              <b>Range :</b> I
+              </p>
+
+              <h2 id="subheading5"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(i) Fractional part function</h2>
+
+              <p>It is defined as : g(x) = {x} = x - [x] e.g. the fractional part of the number 2.1 is 2.1 - 2 = 0.1 and the fractional part of -3.7 is 0.3. The period of this function is 1.<br>
+              <table  style="font-size:16px;font-family:lucida;text-align:center;">
+              <tr>
+              <td>x</td>
+              <td>{x}</td>
+              </tr>
+              <tr>
+              <td>[-2,-1]</td>
+              <td>x + 2</td>
+              </tr>
+              <tr>
+              <td>[-1,0]</td>
+              <td>x + 1</td>
+              </tr>
+              <tr>
+              <td>[0,1]</td>
+              <td>x</td>
+              </tr>
+              <tr>
+              <td>[1,2]</td>
+              <td>x - 1</td>
+              </tr>
+              </table><br>
+              <b>Domain :</b> R<br>
+              <b>Range :</b> [0, 1)
+              </p>
+
+            <h2 id="subheading6"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(j) Identity function</h2>
+
+		    <p>The function f : A \(\rightarrow\) A defined by f(x) = x \(\forall\) x \(\in\) A is called the identity of A and is denoted by  \(I_A\). It is easy to observe that identity function defined on R is bijection.</p>
+
+		    <h2 id="subheading7"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(j) Constant function</h2>
+
+		    <p>The function f : A \(\rightarrow\) B is said to be a constant function if every element of A has the same f image in B. Thus f : A \(\rightarrow\) B ; f(x) = c, \(\forall\) x \(\in\) A, c \(\in\) B is a constant function. Note that the range of constant function is singleton. </p>
+
+		    <h2 id="subheading8"style="font-size:20px;text-align:left;border-top:1px outset lightgrey;"><br>Algebraic Operations on Functions
+		    </h2>
+
+		    <p>If f & g are real valued functions of x with domain set A, B respectively, f + g, f - g, (f.g) & (f/g) as follows :<br><br>
+		    (a) (f \(\pm\) g)(x) = f(x) \(\pm\) g(x) domain in each case is \(A \cap B\)<br><br>
+		    (b) (f.g)(x) = f(x).g(x) domain is \(A \cap B\)<br><br>
+		    (c) (\(f\over g\))(x) = \(f(x)\over g(x)\) domain is \(A \cap B\) - {x|g(x) = 0}</p><br>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> Find the domain of the function y = \(log_{(x-4)}(x^2 - 11x + 24)\).</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Here 'y' would assume real value if,<br><br>
+              x - 4 > 0 and \(\ne\) 1, \(x^2 -11x + 24\) > 0 \(\implies\) x > 4 and \(\ne\) 5, (x-3)(x-8) > 0<br><br>
+              \(\implies\) x > 4 and \(\ne\) 5, x < 3 or x > 8 \(\implies\) x > 8 \(\implies\) Domain (y) = (8, \(\infty\))</p><br>
+              <button class="c" onclick="window.location.href='/as/examples/function-examples.html'">More Examples</button>
+              <button class="b" onclick="window.location.href='/as/questions/function-questions.html'">Try Questions</button>
+            </blockquote><br>
+
+		    <h2 id="subheading9"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Equal or Identical Function </h2>
+
+		    <p>Two function f & g are said to be equal if :<br><br>
+		    (a) The domain of f = the domain of g<br><br>
+		    (b) The co-domain of f = co-domain of g and<br><br>
+		    (c) f(x) = g(x), for every x belonging to their common domain (i.e. should have the same graph)</p>
+
+		    <h2 id="subheading10"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Homogeneous Function </h2>
+
+		    <p>A function is said to be homogeneous with respect to any set of variables when each of its terms is of the same degree with respect to those of the variables<br><br>
+		    For examples \(5x^2 + 3y^2 - xy\) is homogeneous in x and y. Symbolically if, f(tx,ty) = \(t^n\)f(x, y) then f(x, y) is homogeneous function of degree n.</p>
+
+		    <h2 id="subheading11"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Bounded Function </h2>
+
+		    <p>A function is said to be bounded if there exists a finite M such that |f(x)| \(\le\) M, \(\forall\) x \(\in\) \(D_f\).</p>
+
+		    <h2 id="subheading12"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Implicit and Explicit Function 
+		    </h2>
+
+		    <p>A function defined by an equation not solved for the dependent variable is called implicit function. e.g. the equations 
+		    \(x^3 + y^3\) = 1 and \(x^y\) = \(y^x\), defines y as an implicit function. If y has been expressed in terms of x alone then it is called an Explicit function.</p><br>
+
+		    <button class="prev" onclick="window.location.href='/as/function.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/function2.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#subheading1" class="anchor">Exponential and Logarithmic function</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">Absolute Value Function</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Signum Function</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">Greatest integer or step up function</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor">Fractional part function</a>
+                </li>
+                <li>
+                  <a href="#subheading6" class="anchor">Identity function</a>
+                </li>
+                <li>
+                  <a href="#subheading7" class="anchor">Constant function</a>
+                </li>
+                <li>
+                  <a href="#subheading8" class="anchor">Algebraic Operations on Functions</a>
+                </li>
+                <li>
+                  <a href="#subheading9" class="anchor">Equal or Identical Function</a>
+                </li>
+                <li>
+                  <a href="#subheading10" class="anchor">Homogeneous Function</a>
+                </li>
+                <li>
+                  <a href="#subheading11" class="anchor">Bounded Function</a>
+                </li>
+                <li>
+                  <a href="#subheading12" class="anchor">Implicit and Explicit Function</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Statistics - Variance & Standard Deviation | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn measures of dispersion in statistics i.e. range, mean deviation, variance and standard deviation and relationship between them.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,mean,median,mode,step dviation method,combined mean,measures of dispersion,range,mean deviation,variance,standard deviation, coefficient of standard deviation,coefficient of variance,mean square deviation, Relation between variance and mean square deviation,maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <style>
+      table{
+      max-width:100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,tr,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+      
+    }
+      .column1 {
+      flex: 33.33%;
+      padding: 5px;
+    }
+    .row1{
+      display: flex;
+    }
+    @media screen and (max-width: 600px) {
+      
+  .row1{
+    flex-direction: column;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">STATISTICS</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+
+              <h2 id="subheading1"style="font-size:17px;text-align:left;">Mode</h2>
+              <p>In a frequency distribution the mode is the value of that values which have the maximum frequency.</p>
+
+              <h3 style="font-size:16px;text-align:left;">(i) For ungrouped distribution : </h3>
+
+              <p>The value of that variate which is repeated maximum number of times.</p>
+
+			  <h3 style="font-size:16px;text-align:left;">(ii) For ungrouped distribution : </h3>
+
+		      <p>The value of that variate which have maximum frequency.
+
+		      <h3 style="font-size:16px;text-align:left;">(ii) For grouped frequency distribution : </h3>
+
+		      <p>First we find the class which have maximum frequency, this is model class.
+              </p>
+
+              <p style="font-size:16px;font-family:lucida;text-align:left;">
+              \(\therefore\) &nbsp; &nbsp; Mode = (\(l\) + \(f_0 - f_1\over {2f_0 - f_1 - f_2}\))\(\times\)h<br><br>
+              where &nbsp; &nbsp; \(l\) = lower limit of model class<br>
+               \(f_0\) = freq. of model class<br>
+               \(f_1\) = freq. of the class preceding model class<br>
+               \(f_2\) = freq. of the class succeeding model class<br>
+                h = class interval of model class</p>
+
+              <h2 id="subheading2"style="font-size:17px;text-align:left;border-top: 1px outset lightgrey;"><br>Relationship between Mean, Median and Mode</h2>
+
+              <p style="font-size:16px;font-family:lucida;text-align:left;">In a moderately asymmetric distribution following relation between mean, median and mode of a distribution. It is known as impirical formula.<br>
+     		      &nbsp; &nbsp;  &nbsp; &nbsp; Mode = 3 Median - 2 Mean</p>
+
+     		    <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            (i) Median always lies between mean and mode.<br>
+    		    (ii) For a symmetric distribution the mean, median and mode are coincide.</li>
+            </ul></i>
+            </p>
+            </blockquote>
+
+               <h2 id="subheading3"style="font-size:17px;text-align:left;border-top: 1px outset lightgrey;"><br>Measures of Dispersion</h2>
+
+               <p>The dispersion of a stastical distribution is the measure of deviation of its values about the their average(central) value.<br>It gives an idea of scatteredness of different values from the average value.<br>
+               Generally the following measures of dispersion are commonly used.<br>
+               (i) Range &nbsp; &nbsp; &nbsp; &nbsp; (ii) Mean deviation &nbsp; &nbsp; &nbsp; &nbsp; (iii) Variance and standard deviation
+               </p>
+
+               <h2 id="subheading4" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(i) Range</h2> 
+
+               <p>The difference between the greatest and least values of variate of a distribution, are called range of that distribution.<br>
+               If the distribution is grouped distribution, then its range is the difference between upper limit of the maximum class and lower limit of the minimum class.<br><br>
+               Also, coefficient of range = \({difference of extreme values}\over {sum of extreme values}\)
+               </p>
+
+               <h2 id="subheading5" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(ii) Mean deviation(M.D.)</h2> 
+
+               <p>The mean deviation of a distribution is, the mean of absolute value of deviations of variate from their statistical average(Mean, Median, Mode).<br> If A is any statistical average of a distribution that mean deviation about A is defined as <br><br> Mean deviation = \({\sum_{i=1}^{n}{|x_i - A|}}\over n\) &nbsp; &nbsp; &nbsp; &nbsp; (For ungrouped dist.)<br><br>Mean deviation = \({\sum_{i=1}^{n}{f_i|x_i - A|}}\over N\) &nbsp; &nbsp; &nbsp; &nbsp; (For freq. dist.)
+               </p>
+
+              <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+              Mean deviation is minimum when it taken about the median.<br><br>
+              Coefficient of Mean deviation = \({Mean deviation}\over A\)<br><br>
+              (where A is the central tendency about which Mean deviation is taken)</li>
+              </ul></i>
+              </p>
+              </blockquote>
+
+              <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Find the mean deviation of number 3, 4, 5, 6, 7.</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Here n = 5, \(\bar{x}\) = 5<br><br>
+              \(\therefore\) &nbsp; &nbsp; Mean deviation = \({\sum_{i=1}^{n}{|x_i - A|}}\over n\)<br><br>
+              = \(1\over 5\)[|3 - 5| + |4 - 5| + |5 - 5| + |6 - 5| + |7 - 5|]<br><br>
+              = \(1\over 5\)[2 + 1 + 0 + 1 + 2] = 1.2</p><br>
+              <button class="c" onclick="window.location.href='/as/examples/statistics-examples.html'">More Examples</button>
+               <button class="b" onclick="window.location.href='/as/questions/statistics-questions.html'">Try Questions</button>
+              </blockquote><br>
+
+               <h2 id="subheading6" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(iii) Variance and standard deviation</h2> 
+
+               <p>The variance of a distribution is, the mean of squares of deviation of variate from their mean. It is denoted by \(\sigma^2\) or var(x).<br>The positive square root of the variance are called the standard deviation. It is denoted by \(\sigma\) or S.D.<br>Hence standard deviation = + \(\sqrt{variance}\)
+               </p>
+
+               <p><b>Formulae for variance :</b></p>
+
+               <h3 style="font-size:16px;text-align:left;">(i) for ungrouped dist. :</h3> 
+
+               <p>\({\sigma^2}_x\) = \(\sum(x_i - \bar{x})^2\over n\)<br><br>
+               \({\sigma^2}_x\) = \(\sum{x_i}^2\over n\) - \(\bar{x}^2\)
+               = \(\sum{x_i}^2\over n\) - \(({\sum{x_i}\over n})^2\)<br><br>
+               \({\sigma^2}_d\) = \(\sum{d_i}^2\over n\) - \(({\sum{d_i}\over n})^2\),
+               where \(d_i\) = \(x_i\) - a
+               </p>
+
+               <h3 style="font-size:16px;text-align:left;">(ii) for freq dist. :</h3> 
+
+               <p> \({\sigma^2}_x\) = \(\sum f_i(x_i - \bar{x})^2\over N\)<br><br>
+                \({\sigma^2}_x\) = \(\sum f_i{x_i}^2\over N\) - \(\bar{x}^2\)
+                = \(\sum f_i{x_i}^2\over N\) - \(({\sum f_i{x_i}\over N})^2\)<br><br>
+                \({\sigma^2}_d\) = \(\sum f_i{d_i}^2\over n\) - \(({\sum f_i{d_i}\over n})^2\)<br><br>
+                \({\sigma^2}_d\) = \(h^2\)[\(\sum f_i{d_i}^2\over n\) - \(({\sum f_i{d_i}\over n})^2\)],&nbsp; &nbsp; where \(u_i\) = \(x_i\over h\)
+               </p>
+
+               <h3 style="font-size:17px;text-align:left;">(iii) Coefficient of S.D. = \(\sigma\over \bar{x}\)</h3> 
+
+              <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+              \({\sigma^2}\) = \({\sigma^2}_x\) = \({\sigma^2}_d\) = \(h^2\)\({\sigma^2}_u\)
+              </i>
+              </p>
+              </blockquote>
+
+              <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Find variance of first n natural numbers.</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span> \({\sigma^2}_x\) = \(\sum{x_i}^2\over n\) - \(({\sum{x_i}\over n})^2\)<br><br>
+               = \(\sum{n}^2\over n\) - \(({\sum{n}\over n})^2\) = \(n(n + 1)(2n + 1)\over {6n}\) - \([{n(n + 1)\over {2n}}]^2\) = \(n^2 - 1\over 12\)</p>
+              </blockquote>
+
+              <h2 id="subheading7" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Mean Square Deviation</h2>
+
+              <p>The mean square deviation of a distribution is the mean of the square of deviations of variate from assumed mean. It is denoted by \(S^2\).<br><br>
+              Hence  \(S^2\) = \(\sum{x_i - a}^2\over n\) - \(\sum{d_i}^2\over n\) &nbsp; &nbsp; (for ungrouped dist.)<br><br>
+              \(S^2\) = \(\sum{x_i - a}^2\over N\) - \(\sum{f_id_i}^2\over N\) &nbsp; 
+              &nbsp; (for frequency dist.), &nbsp; &nbsp; where \(d_i\) = \(x_i - a\)
+              </p>
+
+              <h2 id="subheading8" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Relation between variance and mean square deviation</h2>
+
+              <p>\(\because\) &nbsp; \({\sigma}^2\) = \(\sum{f_id_i}^2\over N\) - \(({\sum f_i{d_i}\over N})^2\)<br><br>\(\implies\) &nbsp; \({\sigma}^2\) = \(s^2\) - \(d^2\), &nbsp; &nbsp; &nbsp; where d = \(\bar{x} - a\) = \({\sum f_i{d_i}\over N}\) <br><br>\(\implies\) &nbsp; \(s^2\) = \({\sigma}^2\) + \(d^2\), &nbsp; &nbsp; &nbsp; \(\implies\) \(s^2\) \(\geq\) \({\sigma}^2\)<br><br>Hence the variance is the minimum value of mean square deviation of a distribution.
+              </p>
+
+              <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Find the A.M. of the following freq. dist.
+              <table style="width:50%;font-size:16px;font-family:lucida;text-align:center;">
+                <tr>
+                  <td>class</td>
+                  <td>0 - 2</td>
+                  <td>2 - 4</td>
+                  <td>4 - 6</td>
+                  <td>6 - 8</td>
+                  <td>8 - 10</td>
+                  <td>10 - 12</td>
+                </tr>
+                <tr>
+                  <td>\(f_i\)</td>
+                  <td>2</td>
+                  <td>7</td>
+                  <td>12</td>
+                  <td>19</td>
+                  <td>9</td>
+                  <td>1</td>
+                </tr>
+              </table></p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Let a = 7 and h = 2
+              <table style="width:60%;font-size:16px;font-family:lucida;text-align:center;">
+                <tr>
+                  <td>class</td>
+                  <td>\(x_i\)</td>
+                  <td>\(f_i\)</td>
+                  <td>\(u_i\) = \(x_i - a\over h\)</td>
+                  <td>\(f_iu_i\)</td>
+                  <td>\(f_iu_i^2\)</td>
+                </tr>
+                <tr>
+                  <td>0 - 2</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>-3</td>
+                  <td>-6</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>2 - 4</td>
+                  <td>3</td>
+                  <td>7</td>
+                  <td>-2</td>
+                  <td>-14</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>4 - 6</td>
+                  <td>5</td>
+                  <td>12</td>
+                  <td>-1</td>
+                  <td>-12</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>6 - 8</td>
+                  <td>7</td>
+                  <td>19</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>8 - 10</td>
+                  <td>9</td>
+                  <td>9</td>
+                  <td>1</td>
+                  <td>9</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>10 - 12</td>
+                  <td>11</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>N = 50</td>
+                  <td></td>
+                  <td>\(\sum{f_iu_i}\) = -21</td>
+                  <td>\(\sum{f_iu_i^2}\) = 71</td>
+                </tr>
+                </table></p>
+                <p style="font-size:16px;font-family:lucida;text-align:left;">\(\because\) &nbsp; &nbsp; \({\sigma^2}\) = \(h^2\)[\(\sum 
+                f_i{u_i}^2\over n\) - \(({\sum f_i{u_i}\over n})^2\)]<br><br>
+                = 4[\(71\over 50\) - (\({-21\over 50}^2\))]<br><br>
+                = 4[1.42 - 0.1764] = 4.97
+                </p>
+            </blockquote>
+
+            <h2 id="subheading9" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Mathematical Properties of Variance </h2>
+
+            <p>(i) Var.\((x_i + p\)) = Var.(\(x_i\))<br><br>
+            (ii) Var.\((px_i\)) = \(p^2\)Var.(\(x_i\))<br><br>
+            (iii) Var\((ax_i + b\)) = \(a^2\).Var(\(x_i\))<br><br>
+            where p, a, b are constants.
+            </p>
+            
+            <button class="prev" onclick="window.location.href='/as/statistics.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/circle.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#subheading1" class="anchor">Mode</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">Relationship between Mean, Median and Mode</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Measures of Dispersion</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">Range</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor">Mean deviation</a>
+                </li>
+                <li>
+                  <a href="#subheading6" class="anchor">Variance and standard deviation</a>
+                </li>
+                <li>
+                  <a href="#subheading7" class="anchor">Mean Square Deviation</a>
+                </li>
+                <li>
+                  <a href="#subheading8" class="anchor">Relation between variance and mean square deviation</a>
+                </li>
+                <li>
+                  <a href="#subheading9" class="anchor">Mathematical Properties of Variance</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sets - Roaster & Set-builder form | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn roaster method and set-bulder form to write sets and operations on sets i.e. union & intersection and subset, powerset and singleton set.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,Roster Method,Set builder Form,Order of a finite Set,subset,
+  Power Set,Union of two sets, Intersection of two sets,Difference of two sets,Distributive Laws, Commutative Laws,Associative Laws,Complement of a set,De-Morgan Laws,Disjoint Sets, maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">SETS</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+              <p>A set is a collection of well defined objects which are distinct from each other.<br>
+		      Set are generally denoted by capital letters A, B, C, ..... etc. and the elements of the set by a,b,c .....etc.<br>
+		      If a is an element of a set A, then we write a \(\in\) A and say a belongs to A.<br>
+		      If a does not belong to A then we write a \(\notin\) A.</p>
+
+		      <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>The collection of first five prime natural numbers in a set containing the elements 2,3,5,7,11.</p>
+              </blockquote>
+  
+    		  <h2 style="font-size:17px;text-align:left;">Some important number sets</h2>
+
+     		  <p>N = Set of all natural numbers = {1, 2, 3, ....}</p>
+	 		  <p>W = Set of all whole numbers = {0, 1, 2, 3, ....}</p>
+	 		  <p>Z = Set of all integers = {.....-3, -2, -1, 0, 1, 2, 3,....}</p>
+	 		  <p>Q = the set of all rational numbers</p>
+	 		  <p>R = the set of all real numbers</p>
+	
+			  <h2 id="subheading1" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Methods to write a set</h2>
+
+  			  <h2 style="font-size:16px;text-align:left;">(i) Roster Method : </h2> 
+
+    		  <p>In this method a set is described by listing elements, seperated by comma and enclose then by curly brackets.</p>
+
+    		  <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>The set of vowels of English Alphabet may be described as {a, e, i, o ,u}</p>
+              </blockquote>
+    
+    		  <h2 style="font-size:16px;text-align:left;">(ii) Set builder Form : </h2>  
+
+    		  <p>In this case we write down a property or rule p which gives us all the element of the set A = {x : P(x)}</p>
+
+    		  <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>A = {x : x \(\in\) N and x = 2n for n \(\in\) N}<br>
+      		  i.e. A = {2, 4, 6, .....}</p>
+              </blockquote>
+
+    		 <h2 id="subheading2" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Types of sets</h2>
+
+    		 <h2 style="font-size:16px;text-align:left;">Null or Empty Set : </h2>
+
+    		 <p>A set having no element in it is called an Empty set or a null set or void set it is denoted by \(\phi\) or { }<br>
+    		 <b>Ex.</b> &nbsp;&nbsp; A = { x \(\in\) N : 5 < x < 6} = \(\phi\)<br>
+    		 A set consisting of at least one element is called a non-empty set or a non-void set. </p>
+
+    		 <h2 style="font-size:16px;text-align:left;"> Singleton Set : </h2> 
+
+    		 <p>A set consisting of a single element is called a singleton set.<br><b>Ex.</b> &nbsp;&nbsp; Then set {0}, is a singleton set.
+    		 <br>
+    		 </p>
+
+    		 <h2 style="font-size:16px;text-align:left;"> Finite Set : </h2>
+
+    		 <p>A set which has only finite number of elements is called a finite set.<br><b>Ex.</b> &nbsp;&nbsp; A = {a, b, c}.<br>
+    		 </p>
+
+    		 <h2 style="font-size:16px;text-align:left;"> Order of a finite Set : </h2> 
+
+    		 <p>The number of elements in a finite set is called the order of set A and is denoted by O(A) or n(A). It is also called cardinal 
+    		 number of the set.<br>
+    		 <b>Ex.</b> &nbsp;&nbsp; A = {a, b, c, d} \(\implies\) n(A) = 4.<br>
+    		 </p>
+
+    		 <h2 style="font-size:16px;text-align:left;"> Infinite Set : </h2>
+
+    		 <p>A set which has  infinite number of elements is called an infinite set.<br><b>Ex.</b> &nbsp;&nbsp; A = {1, 2, 3, .....} is a 
+    		 infinite set<br>
+    		 </p>
+
+    		 <h2 style="font-size:16px;text-align:left;">Equal Sets : </h2>
+
+    		 <p>Two sets A and B are said to be equal if every element of A is a memeber of B, and every element of B is a member of A.<br>If 		   sets A and B are equal. We write A = B and A and B are not equal then A \(\ne\) B</br>
+    		 <b>Ex.</b> &nbsp;&nbsp; A = {1, 2, 6, 7} and  B = {6, 1, 2, 7} \(\implies\) A = B<br>
+    		 </p>
+
+    		 <h2 style="font-size:16px;text-align:left;"> Equivalent Sets : </h2> 
+
+    		 <p>Two finite sets A and B are equivalent if their number of elements are same i.e n(A) = n(B)</br><b>Ex.</b> &nbsp;&nbsp; A = 
+    		 {1, 3, 5, 7} and  B = {a, b, c, d} \(\implies\) n(A) = 4 and n(B) = 4 \(\implies\) n(A) = n(B)<br>
+    		 </p>
+
+    		<blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            Equal set always equivalent but equivalent sets may not be equal.</li>
+            </ul></i>
+            </p>
+            </blockquote>
+
+    		 <h2 style="font-size:16px;text-align:left;"> Subsets : </h2>
+
+   			 <p>Let A and B be two sets if every element of A is an element of B, then A is called a subset of B if A is a subset of B, we 
+   			 write A \(\subseteq\) B</br>
+   			 <b>Ex.</b> &nbsp;&nbsp; A = {1, 2, 3, 4} and  B = {1, 2, 3, 4, 5, 6 ,7} \(\implies\) A \(\subseteq\) B<br>
+    		 </p>
+
+    		 <h2 style="font-size:16px;text-align:left;"> Proper subset : </h2>
+
+    		 <p>If A is a subset of B and A \(\ne\) B then A is a proper subset of B, and we write A \(\subset\) B</br></br>
+    		 <i>Every set is a subset of itself i.e. A \(\subseteq\) A<br>
+    		 Empty set \(\phi\) is a subset of every set<br>
+    		 The total number of subset of a finite set containing n elements is \(2^n\)</i>
+    		 </p>
+
+    		 <h2 style="font-size:16px;text-align:left;"> Universal Set : </h2> 
+
+    		 <p>A set consisting of all possible elements which occur in the discussion is called a Universal set and is denoted by U.</br>
+    		 All sets are contained in the universal set.<br>
+    		 <b>Ex.</b> &nbsp;&nbsp; A = {1, 2, 3} and  B = {2, 4, 5, 6} C = {1, 3, 5, 7} then U = {1, 2, 3, 4, 5, 6, 7} can be taken as the 
+    		 universal set.
+    		 </p>
+
+    		 <h2 style="font-size:16px;text-align:left;">Power Set :</h2>
+    
+		     <p>Let A be any set. The set of all subsets of A is called power set of A and is denoted by P(A)</p>
+
+		      <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Let A = {1, 2} <br><br>
+		      then P(A) = {\(\phi\), {1}, {2}, {1,2}}
+		      <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:16px;font-family:georgia;text-align:left;"><b>Note :</b></span>&nbsp;&nbsp; If A = \(\phi\) then P(A) has one element</p>
+              </blockquote>
+
+		      <h2 id="subheading3" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Some Operation on Sets</h2>
+
+		      <h2 style="font-size:16px;text-align:left;">(i) Union of two sets : </h2> 
+
+		      <p>A \(\cup\) B = {x : x \(\in\) A or x \(\in\) B}</p>
+
+		      <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>A = {1, 2, 3} B = {2, 3, 4} then A \(\cup\) B ={1, 2, 3, 4}</p>
+              </blockquote>
+
+		      <h2 style="font-size:16px;text-align:left;">(ii) Intersection of two sets : </h2> 
+
+		      <p>A \(\cap\) B = {x : x \(\in\) A and x \(\in\) B}</p>
+
+		      <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>A = {1, 2, 3} B = {2, 3, 4} then A \(\cap\) B ={2, 3}</p>
+              <button class="c" onclick="window.location.href='/as/examples/sets-examples.html'">More Examples</button>
+              <button class="b" onclick="window.location.href='/as/questions/sets-questions.html'">Try Questions</button><br>
+              </blockquote> 
+
+		      <h2 style="font-size:16px;text-align:left;">(iii) Difference of two sets : </h2> 
+
+		      <p>A - B = {x : x \(\in\) A and x \(\notin\) B}</p>
+
+		      <h2 style="font-size:16px;text-align:left;">(iv) Complement of a set : </h2> 
+
+		      <p>A' = {x : x \(\notin\) A but x \(\in\) U} = U - A</p>
+
+		      <h2 style="font-size:16px;text-align:left;">(v) De-Morgan Laws : </h2> 
+
+		      <p>(A \(\cup\) B)' = A' \(\cap\) B' ; (A \(\cap\) B)' = A' \(\cup\) B'</p>
+
+		      <h2 style="font-size:16px;text-align:left;">(vi) Distributive Laws : </h2>
+
+		      <p>A \(\cup\) (B \(\cap\) C) = (A \(\cup\) B)\(\cap\) (A \(\cup\) C) ; A \(\cap\) (B \(\cup\) C) = (A \(\cap\) B)\(\cup\) (A \(\cap\) C)</p>
+
+		      <h2 style="font-size:16px;text-align:left;">(vii) Commutative Laws : </h2>
+
+		      <p>A \(\cup\) B  = B \(\cup\) A ; A \(\cap\) B  = B \(\cap\) A</p>
+
+		      <h2 style="font-size:16px;text-align:left;">(viii) Associative Laws : </h2> 
+
+		      <p>(A \(\cup\) B) \(\cup\) C = A \(\cup\) (B \(\cup\) C)  ; (A \(\cap\) B) \(\cap\) C = A \(\cap\) (B \(\cap\) C)</p>
+		   
+		      <h2 id="subheading4" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Disjoint Sets</h2>
+
+		      <p>If A \(\cap\) B = \(\phi\), then A, B are disjoint.<br>e.g. if A = {1, 2, 3}, B = {7, 8, 9} then A \(\cap\) B = \(\phi\)<br>
+		      A \(\cap\) A' = \(\phi\) &nbsp;&nbsp; \(\therefore\)&nbsp;&nbsp; A, A' are disjoint.</p>
+
+		      <h2 id="subheading5" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Some important results on number of elements in sets</h2>
+
+		      <p>If A, B and C are finite sets, and U be the finite universal set, then</p>
+
+		      <p>(i) n(A \(\cup\) B) = n(A) + n(B) - n(A \(\cap\) B)<br>
+		      (ii) n(A \(\cup\) B) = n(A) + n(B) \(\implies\) A, B are disjoint non-void sets.<br>
+		      (iii) n(A - B) = n(A) - n(A \(\cap\) B)<br>
+		      (iv) n(A \(\triangle\) B) = No. of elements which belong to exactly one of A or B <br>
+		       = n((A - B) \(\cup\) (B - A))<br>
+		       = n(A - B) + n(B - A)<br>
+		       = n(A) - n(A \(\cap\) B) + n(B) - n(A \(\cap\) B) 
+		      <br> = n(A) + n(B) - 2n(A \(\cap\) B)<br>
+		      (v) \(n(A \cup B \cup C)\) = n(A) + n(B) - n(A \(\cap\) B) - n(B \(\cap\) C) - n(A \(\cap\) C) + \(n(A \cap B \cap C)\)<br>
+		      (vi) Number of elements in exactly two of the sets A, B, C<br>
+		       = n(A \(\cap\) B) + n(B \(\cap\) C) + n(C \(\cap\) A) - \(3n(A \cap B \cap C)\)<br>
+		      (vii) Number of elements in exactly one of the sets A, B, C<br> 
+		       = n(A) + n(B) + n(C) - 2n(A \(\cap\) B) - 2n(B \(\cap\) C) - 2n(A \(\cap\) C) + \(3n(A \cap B \cap C)\)<br>
+		      (viii) n(A' \(\cup\) B') = n((A \(\cap\) B)') = n(U) - n(A \(\cap\) B)<br>
+		      (ix) n(A' \(\cap\) B') = n((A \(\cup\) B)') = n(U) - n(A \(\cup\) B)</p>
+
+		      <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>In a group of 1000 people, there are 750 who can speak Hindi and 400 who can speak Bengali. How many can speak Hindi only? How many can speak Bengali only? How many can speak both Hindi and Bengali?</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Let A and B be two sets of person who can speak Hindi and Bengali respectively.<br><br>
+		      then n(A \(\cup\) B) = 1000, n(A) = 750, n(B) = 400<br><br>
+		      Number of person who can speak both Hindi and Bengali<br>
+		      = n(A \(\cap\) B) = n(A) + n(B) - n(A \(\cup\) B)<br>
+		      = 750 + 400 - 1000 = 150<br><br>
+		      Number of persons who can speak hindi only<br>
+		      = n(A - B) = n(A) - n(A \(\cap\) B) = 750 - 150 = 600<br><br>
+		      Number of persons who can speak Bengali only<br>
+		      = n(B - A) = n(B) - n(A \(\cap\) B) = 400 - 150 = 250</p>
+              </blockquote><br>
+
+   			<button class="prev" onclick="window.location.href='/as/series1.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/relations.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#heading" class="anchor">Sets</a>
+                </li>
+                <li>
+                  <a href="#subheading1" class="anchor">Methods to write a set</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">Types of sets</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Some Operation on Sets</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">Disjoint Sets</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor">Some important results on number of elements in sets</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

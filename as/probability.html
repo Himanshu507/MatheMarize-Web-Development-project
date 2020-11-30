@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Probability - Addition & Multiplication Theorem | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial of probability you will learn exhausitive and equally likely events, addition and multiplication theorem, demorgan's law and conditional probability.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,maths tutorials,sample space,event,compound event,complement of event,mutually exclusive events,equally likely events,exhaustive events,addition theorem,demorgan's law,conditional probability,multiplication theorem,independent events,total probability theorem,,baye's theorem,binomial probability distribution,maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">PROBABILITY</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+		    <p style="border-bottom: 1px inset lightgrey;">Probability gives us a measure of likelihood that something will happen. However probability can never predict the number of times that an occurrence actually happens.<br><br></p>
+
+		    <h2 id="subheading1"style="font-size:17px;text-align:left;">Definitions</h2>
+
+		    <h2 style="font-size:16px;text-align:left;">(a) Experiment :</h2>
+
+		    <p>An action or operation resulting in two or more well defined outcomes.</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>tossing a coin,throwing a die,drawing a card from a pack of well shuffled playing cards.</p>
+            </blockquote>
+
+		    <h2 style="font-size:16px;text-align:left;">(b) Sample Space :</h2>
+
+		    <p>A set S consist of all possible outcomes of an random experiment is called a sample space.</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>in an experiment of <b>"throwing a die"</b>,following sample spaces are possible:</br></br>(i) {even number, odd number}<br>(ii) {1,2,3,4,5,6}</p>
+            </blockquote>
+
+		    <h2 style="font-size:16px;text-align:left;">(c) Event :</h2>
+
+		    <p>An event is defined as an occurrence or situation.</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>in a toss of a coin,it shows a head.<br><br>
+              <b>NOTE : </b><i>Probability of occurrence of an event A is denoted by P(A).</i></p>
+            </blockquote>
+
+		    <h2 style="font-size:16px;text-align:left;">(d) Compound Event :</h2>
+
+		    <p>If an event has more than one sample points it is called <b>Compound Event.</b></p>
+
+		    <h2 style="font-size:16px;text-align:left;">(e) Complement of an Event : </h2>
+
+		    <p>The set of all outcomes which are in S but not in A is called complement of the event A. It is denoted by \(A^c\), \(A^`\).</p>
+
+		    <h2 style="font-size:16px;text-align:left;">(f) Mutually Exclusive Event : </h2>
+
+		    <p>Two events A and B are said to be <b>Mutually Exclusive</b> if probability of A intersection B is zero i.e \(P(A \cap B)\)=0.</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> choosing numbers at random from the set {3,4,5,6,7,8,9,10,11,12}. If,<br/><br/>
+		      Event A is the selection of a prime number.<br/>
+		      Event B is the selection of an odd number.<br/>
+		      Event C is the selection of an even number.<br/><br/> 
+		      Then A and C are mutually exclusive as none of the numbers in this set is both prime and even and B and C are also mutually exclusive.</i></p>
+            </blockquote>
+
+		    <h2 style="font-size:16px;text-align:left;">(g) Equally Likely Events : </h2>
+
+		    <p>Events are said to be <b>Equally Likely</b> when each event is as likely occur as any other event. Note that the term 'at random' or 'randomly' means that all possibilities are equally likely.</p>
+
+		    <h2 style="font-size:16px;text-align:left;">(h) Exhaustive Events : </h2>
+
+		    <p>Events A,B,C.....N are said to be <b>Exhaustive Events</b> if no events outside this set can result as an outcome of an experiment.</p>
+
+		    <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            (i) 0<=P(A)<=1<br/>
+		    (ii) P(A)+P(\(A^c\))=1<br/>
+		    (iii) If x cases are favourable to A & y cases are favourable to \(A^c\) then P(A)=\(x\over(x+y)\) and \(P(A \cap B)\)=\(y\over(x+y)\). We say that Odds in Favour of A are x:y & Odds Against A are y:x.</i>
+            </p>
+            </blockquote>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>  If the letters of <b>INTERMEDIATE</b> are arranged, then odds in favour of the event that no two 'E's occur together, are-</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Let 3'E's, Rest 9 letters,<br>First arrange rest of the letters = \(9!\over {2! 2!}\)<br>
+		      Now 3'E's can be placed by \(^{10}C_3\)  ways, so favourable cases = \({9!\over {2! 2!}}\times\)\(^{10}C_3\) = 3 \(\times\) 10!<br>
+		      Total cases = \(12!\over {2! 2! 3!}\) = \({11\over 2} \times\)10!<br>
+		      Non-favourable cases = (\(11\over 2\) - 3)\(\times\)10! = \({5\over 2}\times\)10!<br><br>
+		      Odds in favour of the event = \(3\over {5/2}\) = \(6\over 5\) Ans.</p>
+              <button class="c" onclick="window.location.href='/as/examples/probability-examples.html'">More Examples</button>
+              <button class="b" onclick="window.location.href='/as/questions/probability-questions.html'">Try Questions</button>
+            </blockquote><br>
+
+            <h2 id="subheading2"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Addition Theorem</h2>
+
+		    <p>\(A\cup B\) = A + B = A or B denotes the occurrence of at least A or B.
+		    <br>For two events A & B :</p>
+
+		    <p><b>(a)</b>&nbsp;&nbsp;P(\(A\cup B\)) = P(A) + P(B) - P(\(A\cap B\))<br></p>
+
+		    <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            (i) If A & B are mutually exclusive then P(\(A\cup B\)) = P(A) + P(B)<br>
+		    (ii) If A & B are mutually exclusive and exhaustive then P(\(A\cup B\)) = P(A) + P(B) = 1</i>
+            </p>
+            </blockquote>
+
+		    <p><b>(b)</b>&nbsp;&nbsp;P(only A occurs) = P(A\B) = P(A - B) = P(\(A\cap B^C\)) = P(A) - P(\(A\cap B\))</p>
+
+		    <p><b>(c)</b>&nbsp;&nbsp;P(either A or B) = 1 - P(neither A nor B) &nbsp;i.e. P(\(A\cup B\)) = 1 - P(\(A^C \cap B^C\))</p>
+
+		    <p><b>(d)</b>&nbsp;&nbsp;For any two events A & B :<br>
+
+		    <p><ul style="list-style-type:none;"><li>P(exactly one of A, B occurs) = P(\(A\cap B^C\)) + 
+		    P(\(B\cap A^C\))</li>
+		    <li>P(exactly one of A, B occurs) = P(A) + P(B) - 2P(\(A\cap B\)) = P(\(A\cup B\)) - P(\(A\cap B\)) = P(\(A^c\cup B^c\)) - P(\(A^c\cap B^c\))</li></ul></p>
+		    </p>
+
+		    <p><b>(e)</b>&nbsp;&nbsp;P(\(A\cap B\)) <= P(A), P(B)<= P(\(A\cup B\)) <= P(A) + P(B) </p>
+
+		    <h2 id="subheading3"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>DE MORGAN'S LAW :</h2>
+
+		    <p>If A & B are two subsets of a universal set U, then<br>(i)&nbsp;&nbsp;(\(A\cup B)^c\) = \(A^c\cap B^c\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii)&nbsp;&nbsp;(\(A\cap B)^c\) = \(A^c\cup B^c\) </p>
+
+		    <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            (i) (\(A\cup B\cup C)^c\) = \(A^c\cap B^c\cap C^c\) & (\(A\cap B\cap C)^c\) = \(A^c\cup B^c\cup C^c\)<br>
+		    (ii) \(A\cup (B\cap C)\) = (\(A\cup B)\cap (A\cup C)\) & \(A\cap (B\cup C)\) = (\(A\cap B)\cup (A\cap C)\)</i>
+            </p>
+            </blockquote>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>  If A and B are two events such that P(\(A\cup B)\) = \(3\over 4\), P(\(A\cap B)\) = \(1\over 4\) and \(P(A^c)\) = \(2\over 3\). Then find-&nbsp;&nbsp;(i) P(A) &nbsp;&nbsp; (ii) P(B) &nbsp;&nbsp; (iii) \(P(A\cap B^c)\)
+		      &nbsp;&nbsp; (iv) \(P({A^c}\cap B)\)</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>P(A) = 1 - P(\(A^c\)) = 1 - \(2\over 3\) = \(1\over 3\)<br><br>
+		      P(B) = P(\(A\cup B\)) + P(\(A\cap B\)) - P(A) =  \(3\over 4\) + \(1\over 4\) - \(1\over 3\) = \(2\over 3\)<br><br>
+		      P(\(A\cap B^c\)) = P(A) - P(\(A\cap B\)) = \(1\over 3\) - \(1\over 4\) = \(1\over 12\)<br><br>
+		      P(\({A^c}\cap B\)) = P(B) - P(\(A\cap B\)) = \(2\over 3\) - \(1\over 4\) = \(5\over 12\)</p><br>
+              <button class="c" onclick="window.location.href='/as/examples/probability-examples.html'">More Examples</button>
+              <button class="b" onclick="window.location.href='/as/questions/probability-questions.html'">Try Questions</button>
+            </blockquote><br>
+
+		    <h2 id="subheading4"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Conditional Probability and Multiplication Theorem :</h2>
+
+		    <h3 id="subheading5"style="font-size:16px;text-align:left;">(a) Conditional Probability</h3>
+
+		    <p>Let A and B be two events such that P(A) > 0. Then P(B|A) denotes the Conditional Probability of B given that A has occured. Since A is known to have occurred, it becomes the new sample space replacing the original S. From this we led to definition <br><br>
+		    P(B|A) = \({P(A\cap B)}\over P(A)\) = which is called Conditional Probability of B given A.
+		    <br>
+		    </p>
+
+		    <h3  id="subheading6"style="font-size:16px;text-align:left;">(b) Multiplication Theorem :</h3>
+
+		    <p>P(\(A\cap B\)) = P(A).P(B|A) which is called compound probability or multiplication theorem. It says the probability that both A and B occur is equal to the probability that A occur times the probability that B occurs given that A has occurred. <br>
+		    </p>
+
+		    <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            For any three events \(A_1\), \(A_2\), \(A_3\) we have<br><br>
+		    P(\(A_1\cap A_2\cap A_3\)) = P(\(A_1\)).P(\(A_2|A_1\)).P(\(A_3|(A_1\cap A_2\)))</i>
+            </p>
+            </blockquote>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> A bag contains 3 red, 6 white and 7 blue balls. Two balls are drawn one by one. What is the probability that first ball is white and second ball is blue when first drawn ball is not replaced in the bag?</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Let A be the event of drawing first ball white and B be the event of drawing second ball blue.<br>Here A and B are dependent events.<br><br>
+		      P(A) = \(6\over 16\),  P(B|A) = \(7\over 15\)<br><br>
+		      P(AB) = P(A).P(B|A) = \(6\over 16\)x\(7\over 15\) = \(7\over 40\)  </p>
+            </blockquote><br>
+            
+            <button class="prev" onclick="window.location.href='/as/logarithm.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/probability1.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#subheading1" class="anchor">Definitions</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">Addition Theorem</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">DE MORGAN'S LAW</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">Conditional Probability and Multiplication Theorem</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

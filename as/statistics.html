@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Statistics - Mean, Median & Mode | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn how to find mean and median for ungrouped distribution, grouped frequency distribution and step deviation method to calculate means.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,mean,median,mode,step dviation method,combined mean,measures of dispersion,range,mean deviation,variance,standard deviation, coefficient of standard deviation,coefficient of variance,mean square deviation, Relation between variance and mean square deviation,maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <style>
+      table{
+      max-width:100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,tr,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+      
+    }
+      .column1 {
+      flex: 33.33%;
+      padding: 5px;
+    }
+    .row1{
+      display: flex;
+    }
+    @media screen and (max-width: 600px) {
+      
+  .row1{
+    flex-direction: column;
+  }
+}
+  </style>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">STATISTICS</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+              <p style="border-bottom: 1px inset lightgrey;">An average value or central value of a distribution is the value of variable which is representative of the entire distribution, this representative value are called the measures of central tendency.<br>
+    		  Generally the following the measures of central tendency.<br>
+    		  (a) Mathematical average<br>
+    		  &nbsp; &nbsp; &nbsp; (i) Arithmetic mean &nbsp; &nbsp; &nbsp; (ii) Geometric mean &nbsp; &nbsp; &nbsp; (iii) Harmonic mean<br>
+    		  (b) Positional average<br>
+   			  &nbsp; &nbsp; &nbsp; (i) Median &nbsp; &nbsp; &nbsp; (ii) Mode<br><br></p>
+
+              <h2 id="subheading1"style="font-size:17px;text-align:left;">Arithmetic Mean : For grouped and ungrouped frequency distribution</h2>
+
+              <h3 id="subheading2"style="font-size:16px;text-align:left;">(i) For ungrouped distribution : </h3>
+
+              <p>If \(x_1\), \(x_2\), ...... \(x_n\) are n values of variate \(x_i\) then their A.M. \(\bar{x}\) is defined as<br><br> \(\bar{x}\) = \(x_1 + x_2, ...... + x_n \over n\) = \({\sum_{i=1}^{n}x_i}\over n\)<br><br>\(\implies\) \(\sum x_i\) = n\(\bar{x}\)</p>
+
+			  <h3 id="subheading3"style="font-size:16px;text-align:left;">(ii) For ungrouped and grouped frequency distribution : </h3>
+
+		      <p>If \(x_1\), \(x_2\), ...... \(x_n\) are values of variate with corresponding frequencies \(f_1\), \(f_2\), ...... \(f_n\), theb their A.M. is given by <br><br>
+		      \(\bar{x}\) = \(f_1x_1 + f_2x_2 + ...... + f_nx_n \over f_1 + f_2 + ...... + f_n\) = \({\sum_{i=1}^{n}f_ix_i}\over N\), where N = \({\sum_{i=1}^{n}f_i}\)
+              </p>
+
+              <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Find the A.M. of the following freq. dist.
+			     <table style="font-size:16px;font-family:lucida;text-align:center;">
+				  <tr>
+				    <td>\(x_i\)</td>
+				    <td>5</td>
+				    <td>8</td>
+				    <td>11</td>
+				    <td>14</td>
+				    <td>17</td>
+				  </tr>
+				  <tr>
+				    <td>\(f_i\)</td>
+				    <td>4</td>
+				    <td>5</td>
+				    <td>6</td>
+				    <td>10</td>
+				    <td>20</td>
+				  </tr>
+				 </table></p>
+               <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Here N = \(\sum f_i\) = 4 + 5 + 6 + 10 + 20 = 45<br><br>
+  			   \(\sum f_ix_i\) = 606<br><br>
+  			   \(\therefore\) \(\bar{x}\) = \(\sum f_ix_i\over N\) = \(606\over 45\) = 13.47</p><br>
+               <button class="c" onclick="window.location.href='/as/examples/statistics-examples.html'">More Examples</button>
+               <button class="b" onclick="window.location.href='/as/questions/statistics-questions.html'">Try Questions</button>
+               </blockquote><br>
+
+               <h2 id="subheading4"style="font-size:17px;text-align:left;border-top: 1px outset lightgrey;"><br>(iii) By short method</h2>
+
+               <p>If the value of \(x_i\) are large, then calculation of A.M. by using previous formula is quite tedious and time consuming. In such case we take deviation of variate from an arbitrary point a.<br>
+   			   = Let &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  \(d_i\) = \(x_i\) - a<br><br>
+   			   \(\therefore\) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \(\bar{x}\) = a + \(\sum f_id_i\over N\), where a is assumed mean
+               </p>
+
+               <h2 id="subheading5" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(iv) By step deviation method</h2> 
+
+               <p>Sometime during the application of short method of finding the A.M. If each deviation \(d_i\) are divisible by a common number h(let)<br>
+               Let &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  \(u_i\) = \(d_i\over h\) = \(x_i - a\over h\)<br><br>
+               \(\therefore\) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \(\bar{x}\) = a + (\(\sum f_iu_i\over N\))h 
+               </p>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Find the A.M. of the following freq. dist.
+			     <table style="font-size:16px;font-family:lucida;text-align:center;">
+				  <tr>
+				    <td>\(x_i\)</td>
+				    <td>5</td>
+				    <td>15</td>
+				    <td>25</td>
+				    <td>35</td>
+				    <td>45</td>
+				    <td>55</td>
+				  </tr>
+				  <tr>
+				    <td>\(f_i\)</td>
+				    <td>12</td>
+				    <td>18</td>
+				    <td>27</td>
+				    <td>20</td>
+				    <td>17</td>
+				    <td>6</td>
+				  </tr>
+				</table></p>
+               <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Let assumed mean a = 35, h = 10<br><br>
+  			   here N = \(\sum f_i\) = 100, \(u_i\) = \(x_i - 35\over 10\)<br><br>
+  			   \(\sum f_iu_i\) = (12\(\times\)-3) + (18\(\times\)-2) + (27\(\times\)-1) + (20\(\times\)0) + (17\(\times\)1) + (6\(\times\)2)
+  			   = -70<br><br>
+  			   \(\therefore\) &nbsp; \(\bar{x}\) = a + (\(\sum f_ix_i\over N\))h = 35 + \((-70)\over 100\)\(\times\)10 = 28</p><br>
+               <button class="c" onclick="window.location.href='/as/examples/statistics-examples.html'">More Examples</button>
+               <button class="b" onclick="window.location.href='/as/questions/statistics-questions.html'">Try Questions</button>
+               </blockquote><br>
+
+               <h2 id="subheading6" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(v) Weighted Mean</h2> 
+
+               <p>If \(w_1\), \(w_2\), ......\(w_n\) are the weights assigned to the values \(x_1\), \(x_2\), .....\(x_n\) respectively then their weighted mean is defined as<br><br>
+    		   Weighted mean = \(w_1x_1 + w_2x_2 +......+ w_nx_n\over {w_1 +.......+ w_n}\) = \({\sum_{i=1}^{n}w_ix_i}\over 
+    		   {\sum_{i=1}^{n}w_i}\)
+               </p>
+
+               <h2 id="subheading7" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(vi) Combined Mean</h2> 
+
+               <p>If \(\bar{x_1}\) and \(\bar{x_2}\) be the means of two groups having \(n_1\) and \(n_2\) terms respectively then the mean(combined mean) of their composite group is given by<br><br>
+               Combined mean = \(n_1\bar{x_1} + n_2\bar{x_2}\over {n_1 + n_2}\)<br><br>
+               If there are more than two groups then, combined mean = \(n_1\bar{x_1} + n_2\bar{x_2} + n_3\bar{x_3} + .....\over {n_1 + n_2 + n_3 + ....}\)
+               </p>
+
+               <h2 id="subheading8" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Properties of Arithmetic Mean</h2> 
+
+               <p><ul style="font-size:16px;font-family:lucida;text-align:left;">
+			   <li>&nbsp; Sum of deviations of variate from their A.M. is always zero i.e. \(\sum\)(\(x_1 - \bar{x}\)) = 0, 
+	  		   \(\sum\)\(f_i\)(\(x_1 - \bar{x}\)) = 0</li>
+			   <li>&nbsp; Sum of square of deviations of variate from their A.M. is minimum i.e. \(\sum\)(\(x_1 - \bar{x})^2\) is minimum.</li>
+			   <li>&nbsp; A.M. is independent of change of assumed mean i.e. it is not effected by any change in assumed mean.
+			   </ul> 
+               </p>
+
+               <h2 id="subheading9" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Median : For grouped and ungrouped frequency distribution</h2>
+
+               <p>The median of a series is the value of middle term of the series when the values are written in ascending order. Therefore median, divided an arranged series into two equal parts.</p>
+
+               <h3 style="font-size:16px;text-align:left;">(i) For ungrouped distribution : </h3>
+
+              <p>(i) For ungrouped distribution : </b> </span>Let n be the number of variate in a series then<br><br>
+    		  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Median = \(({n + 1\over 2})^{th}\) term, (when n is odd)<br><br>
+    		  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Median = Mean of \(({n\over 2})^{th}\) and \(({n\over 2} + 1)^{th}\) terms, (where n is even)
+    		  </p>
+
+			  <h3 style="font-size:16px;text-align:left;">(ii) For ungrouped frequency distribution : </h3>
+
+		      <p>First we prepare the cumulative frequency(c.f.) column and Find value of N then<br><br>
+    		  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Median = \(({N + 1\over 2})^{th}\) term, (when N is odd)<br><br>
+    		  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Median = Mean of \(({N\over 2})^{th}\) and \(({N\over 2} + 1)^{th}\) terms, (where n is even)
+              </p>
+
+              <h3 style="font-size:16px;text-align:left;">(iii) For grouped freq. dist. : </h3>
+
+		      <p>Prepare c.f. column and find value of \(N\over 2\) then find the class which contain value of c.f. is equal or just greater to N/2, this is median class<br>
+    		  \(\therefore\) &nbsp; &nbsp;  Median = \(l\) + \(({N\over 2} - F)\over f\)\(\times\)h<br><br>
+    	      where  &nbsp; &nbsp;  \(l\) - lower limit of median class<br> 
+    		  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f - frequency of median class<br>
+    	      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; F - c.f. of the class preceding median class<br>
+    		  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; h - class interval of median class<br>
+              </p>
+
+              <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Find the A.M. of the following freq. dist.
+			     <table style="font-size:16px;font-family:lucida;text-align:center;">
+				  <tr>
+				    <td>class</td>
+				    <td>0 - 10</td>
+				    <td>10 - 20</td>
+				    <td>20 - 30</td>
+				    <td>30 - 40</td>
+				    <td>40 - 50</td>
+				  </tr>
+				  <tr>
+				    <td>\(f_i\)</td>
+				    <td>8</td>
+				    <td>30</td>
+				    <td>40</td>
+				    <td>12</td>
+				    <td>10</td>
+				  </tr>
+				</table></p>
+               <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span><table style="font-size:16px;font-family:lucida;text-align:center;">
+				  <tr>
+				    <td>class</td>
+				    <td>0 - 10</td>
+				    <td>10 - 20</td>
+				    <td>20 - 30</td>
+				    <td>30 - 40</td>
+				    <td>40 - 50</td>
+				  </tr>
+				  <tr>
+				    <td>\(f_i\)</td>
+				    <td>8</td>
+				    <td>30</td>
+				    <td>40</td>
+				    <td>12</td>
+				    <td>10</td>
+				  </tr>
+				  <tr>
+				    <td>c.f.</td>
+				    <td>8</td>
+				    <td>38</td>
+				    <td>78</td>
+				    <td>90</td>
+				    <td>100</td>
+				  </tr>
+				</table></p>
+				<p style="font-size:16px;font-family:lucida;text-align:left;">Here \(N\over 2\) = \(100\over 2\) = 50 which lies in the value of 78 of c.f. hence corresponding class of this c.f. is 20 - 30 is the median class, so<br><br>
+				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \(l\) = 20, f = 40, f = 38, h = 10<br><br>
+				\(\therefore\) &nbsp; &nbsp; &nbsp; &nbsp; Median = \(l\) + \(({N\over 2} - F)\over f\)\(\times\)h = 
+				20 + \((50 - 38)\over 40\)\(\times\)10 = 23</p><br>
+               </blockquote><br>
+
+            
+            <button class="prev" onclick="window.location.href='/as/differentiability.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/statistics1.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#heading" class="anchor">Statistics</a>
+                </li>
+                <li>
+                  <a href="#subheading1" class="anchor">Arithmetic Mean</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">For ungrouped distribution</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">For ungrouped and grouped frequency distribution</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">By short method</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor">By step deviation method</a>
+                </li>
+                <li>
+                  <a href="#subheading6" class="anchor">Weighted Mean</a>
+                </li>
+                <li>
+                  <a href="#subheading7" class="anchor">Combined Mean</a>
+                </li>
+                <li>
+                  <a href="#subheading8" class="anchor">Properties of Arithmetic Mean</a>
+                </li>
+                <li>
+                  <a href="#subheading9" class="anchor">Median</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

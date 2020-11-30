@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Probability - Baye's Theorem | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn independent events, total probability theorem, baye's theorem and binomial probability distribution.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,maths tutorials,sample space,event,compound event,complement of event,mutually exclusive events,equally likely events,exhaustive events,addition theorem,demorgan's law,conditional probability,multiplication theorem,independent events,total probability theorem,,baye's theorem,binomial probability distribution,maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">PROBABILITY</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+
+		    <h2 id="subheading1"style="font-size:17px;text-align:left;">Independent Events</h2>
+
+		    <p>Two Events A and B are said to be independent if occurrence or non-occurrence of one does not affect the probability of the occurrence or non-occurrence of other.<br><br>
+		    <b>(a)</b>&nbsp;&nbsp;If the occurrence of one event affects the probability of the occurrence of the other event then the events are said to be <b>Dependent</b> or <b>Contigent.</b>For two events A and B : P(\(A\cap B\)) = P(A).P(B). Often this is taken as the definition of independent events.</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Note : </span>If A & B are independent events, then<br>
+              (i)  P(\(A^c\cap B^c\)) = P(\(A^c\)).P(\(B^c\))<br>
+              (ii) P(\(A\cap B^c\)) = P(A).P(\(B^c\))</p>
+            </blockquote>
+
+		    <p><b>(b)</b>&nbsp;&nbsp;Three events A,B and C are independent if & only if all the following conditions hold;</p>
+
+		    <p style="margin-left:30px;">
+		      P(\(A\cap B\)) = P(A).P(B); &nbsp;&nbsp; P(\(B\cap C\)) = P(B).P(C)<br>
+		      P(\(C\cap A\)) = P(C).P(A) and P(\(A\cap B\cap C\)) = P(A).P(B).P(C)<br>
+		      i.e. they must be pairwise as well as mutually independent.</p>
+
+		    <p><b>(c)</b>&nbsp;&nbsp;If three events A, B and C are pair wise mutually exclusive i.e. P(\(A\cap B\)) = P(\(B\cap C\)) = P(\(C\cap A\)) = 0 => P(\(A\cap B\cap C\)) = 0. However the converse of this is not true.</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Note : </span>Independent events are not generally mutually exclusive and vice versa.Mutually exclusiveness can be used when the events are taken from the same experiment and independence can be used when the events are taken from different experiments.</p>
+            </blockquote>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>If A and B are independent events such that P(\(A\cap B^c\)) = \(1\over 3\) & P(\(A\cup B\)) = \(11\over 15\),then P(\(A\cap B\)) is equal to</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>P(A) - P(\(A\cap B\)) = \(1\over 3\)<br><br>
+		      P(\(A\cup B\)) = P(A) + P(B) - P(\(A\cap B\)) = \(11\over 15\)<br><br>
+		      => P(B) = \(6\over 15\) = \(2\over 5\)<br><br>
+		      P(A) - P(A).P(B) = \(1\over 3\) => P(A) = \(5\over 9\)<br><br>
+		      => P(\(A\cap B\)) = P(A).P(B) = \(2\over 5\)x\(5\over 9\) = \(2\over 9\)
+            </blockquote>
+
+		    <h2 id="subheading2"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Total Probability theorem</h2>
+
+		    <p>Let an event A of an experiment occurs with its n mutually exclusive and exhaustive events \(B_1,B_2,B_3....B_n\) then total probability of occurrence of event A is<br><br>
+		    P(A) = \(P(AB_1)\) + \(P(AB_2)\) +........+ \(P(AB_n)\)<br><br>
+		    P(A) = P(\(B_1\))P(\(A|B_1\)) + P(\(B_2\))P(\(A|B_2\)) +........+ P(\(B_n\))P(\(A|B_n\))</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> A purse contains 4 copper and 3 silver coins and another purse contains 6 copper and 2 silver coins. One coin is drawn from any one of the these two purses. The probability that it is a copper coin is- </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Let A = event of selecting first purse<br>
+		      B = event of selecting second purse<br>
+		      C = event of selecting copper coin<br>
+		      Then given event has two disjoint cases : AC and BC<br><br>
+		      .:. P(C) = P(AC + BC) = P(AC) + P(BC) = P(A)P(C|A) + P(B)P(C|B)<br><br>
+		      = \(1\over 2\).\(4\over 7\) + \(1\over 2\).\(6\over 8\) = \(37\over 56\)
+            </blockquote>
+
+            <h2 id="subheading3"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Baye's Theorem</h2>
+
+		    <p>Let an event A of an experiment occurs with its n mutually exclusive & exhaustive events \(B_1\), , \(B_2\), \(B_3\),.........\(B_n\) & the probabilities P(A/\(B_1\)), P(A/\(B_2\))........P(A/\(B_n\)) are known, then<br><br>P(\(B_i\)/A) = \(P(B_i).P(A/B_i)\over {\sum_{n=1}^{\infty}P(B_i).P(A/B_i)}\)</p>
+
+		    <p><b>Explanation : </b><br>
+		    A = event what we have; <br> \(B_i\) = event what we want & remaining are alternative events.<br>
+		    Now, P(A\(B_i\)) = P(A).P(\(B_i\)/A) = \(P(B_i).P(A/B_i)\)<br>
+		    <br>
+		     P(\(B_i\)/A) = \(P(B_i).P(A/B_i)\over {P(A)}\) = \(P(B_i).P(A/B_i)\over {\sum_{n=1}^{n}P(AB_i)}\)<br><br>
+		     P(\(B_i\)/A) = \(P(B_i).P(A/B_i)\over {\sum_{n=1}^{\infty}P(B_i).P(A/B_i)}\)<br>
+		    </p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Given three identical boxes I, II and III, each conatining two coins. In box I, both coins are gold coins, in box II, both are silver coins and in the box III, there is one gold and one silver coin. A person chooses a box at random and takes out a coin. If the coin is of gold, what is the probability that the other coin in box is also of gold?</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Let \(E_1\), \(E_2\), \(E_3\) be the events that boxes I,II and III are chosen,respectively.<br><br>
+		      Then P(\(E_1\)) = P(\(E_2\)) = P(\(E_3\)) = \(1\over 3\)<br>
+		      Also, Let A be the event that 'the coin drawn is of gold'<br><br>
+		      Then P(A|\(E_1\)) = P(a gold coin from box I) = \(2\over 2\) = 1<br><br>
+		      P(A|\(E_2\)) = P(a gold coin from box II) = 0<br><br>
+		      P(A|\(E_3\)) = P(a gold coin from box III) = \(1\over 2\)<br><br>
+		      Now, the probability that the other coin in the box is of gold<br>
+		      = the probability that gold coin is drawn from the box I.<br>
+		      = P(\(E_1\)|A)<br>
+		      By Baye's theorem, we know that<br><br>
+		      P(\(E_1\)|A) = \(P(E_1).P(A/E_1)\over {P(E_1).P(A/E_1) + P(E_2).P(A/E_2) + P(E_3).P(A/E_3)}\) <br><br>
+		      P(\(E_1\)|A) = \({{1\over 3}\times1}\over {{1\over 3}\times 1 + {1\over 3}\times 0 + {1\over 3}\times{1\over 2}}\) = \(2\over 3\) 
+            </blockquote>
+
+            <h2  id="subheading4"style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Binomial Probability Distribution</h2>
+    
+		    <p>Suppose that we have an experiment such as tossing a coin or die repeatedly or choosing a marble from an urn repeatedly. Each toss or selection is called a trial. In any single trial there will be a probability associated with a particular event such as head on the coin, 4 on the die, or selection of a red marble. In some cases this probability will not change from one trial to the next(as in tossing a coin or die). Such trials are then said to be independent and are often called Bernoulli trials after James Bernoulli who investigated them at the end of the seventeenth century. <br>
+		    Let p be the probability that an event will happen in any single Bernoulli trial(called the probability of success).Then q = 1 - p is the probability that the event will fail to happen in any single trial (called the probability of Failure). The probability that the event will happen exactly x times in n trials (i.e., x success and n - x failures will occur) is given by the probabilty function.
+		    <br><br>
+		    f(x) = P(X = x) = \(\binom{n}{x} p^x q^{n-x}\) = \(n!\over {x!(n - x)!}\) \(p^xq^{n-x}\)  <br><br>
+		    where the random variable X denotes the number of success in n trials and x = 0, 1,.......,n.</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>What is the probability of getting exactly 2 heads in 6 tosses of a fair coin? </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>The probability of getting exactly 2 heads in 6 tosses of a fair coin is<br><br>
+     		  P(X = 2) = \(\binom{6}{2} ({1\over 2})^2 ({1\over 2})^{6-2}\) = \(6!\over {2!4!}\) \(({1\over 2})^2 ({1\over 2})^{6-2}\) = \(
+     		  {15}\over{64}\) 
+            </blockquote>
+
+            <p> The discrete probability function is often called the binomial distributon since for x = 0, 1, 2,......,n, it corresponds to successive terms in the binomial expansion.<br><br>
+            \((q + p)^n\) = \(q^n\) + \(\binom{n}{1} p q^{n-1}\) + \(\binom{n}{2} p^2 q^{n-2}\) + ..........+ \(p^n\) = 
+            \({\sum_{n=1}^{\infty}}\)\(\binom{n}{x} p^x q^{n-x}\)</p><br>
+
+            <button class="prev" onclick="window.location.href='/as/probability.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/series.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#subheading1" class="anchor">Independent Events</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">Total Probability theorem</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Baye's Theorem</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">Binomial Probability Distribution</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

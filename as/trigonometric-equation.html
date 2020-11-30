@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Trigonometric Equation - General & Particular Solution | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn various methods to find general and particular solution of trigonometric equation and trigonometric inequalities.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trigonometry, inverse trigonometric function, trigonometric equation, trigonometric identities, examples, questions, tutorials,maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <style>
+      table{
+      max-width:100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,tr,td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+      
+    }
+      .column1 {
+      flex: 33.33%;
+      padding: 5px;
+    }
+    .row1{
+      display: flex;
+    }
+    @media screen and (max-width: 600px) {
+      
+  .row1{
+    flex-direction: column;
+  }
+}
+  </style>
+
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">TRIGONOMETRIC EQUATION</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+              <p>An equation involving one or more trigonometrical ratios of unknown angles is called a trigonometrical equation.</p>
+
+              <h2 id="subheading1"style="font-size:20px;text-align:left;">Solution of trigonometric Equation :</h2>
+
+              <p>A value of the unknown angle which satisfies the given equation is called a solution of the trigonometric equation.</p>
+
+              <p><b>(a) Principal solution :- </b> &nbsp; The solution of the trigonometric equation lying in the interval [0, \(2\pi\)). <br><br>
+              <b>(b) General Solution :- </b> &nbsp; Since all the trigonometric functions are many one & periodic, hence there are infinite values values of 0 for which trigonometric functions have the same value. All such possible values of 0 for which the given trigonometric function is satisfied is given by a general formula. Such a general formula is called general solution of trigonometric equation.<br><br>
+              <b>(c) Particular Solution :- </b> &nbsp; The solution of the trigonometric equation lying in the given interval.
+              </p>
+
+              <h2 id="subheading2"style="font-size:20px;text-align:left;border-top:1px outset lightgrey;"><br>General solutions of some trigonometric functions :</h2><br>
+
+              <p><b>(a)</b> &nbsp; If sin \(\theta\) = 0, then \(\theta\) = n\(\pi\), n \(\in\) I (set of integers)<br><br>
+              <b>(b)</b> &nbsp; If cos \(\theta\) = 0, then \(\theta\) = (2n+1)\(\pi\over 2\), n \(\in\) I<br><br>
+              <b>(c)</b> &nbsp; If tan \(\theta\) = 0, then \(\theta\) = n\(\pi\), n \(\in\) I<br><br>
+              <b>(d)</b> &nbsp; If sin \(\theta\) = sin \(\alpha\), then \(\theta\) = n\(\pi\) + \({(-1)}^n\alpha\), where \(\alpha\) \(\in\) [-\(\pi\over 2\), \(\pi\over 2\)], n \(\in\) I<br><br>
+              <b>(e)</b> &nbsp; cos \(\theta\) = cos \(\alpha\), then \(\theta\) = 2n\(\pi\) \(\pm\) \(\pi\over 3\) \(\alpha\), where \(\alpha\) \(\in\) [0,\(\pi\)], n \(\in\) I<br><br>
+              <b>(f)</b> &nbsp; tan \(\theta\) = tan \(\alpha\), then \(\theta\) = n\(\pi\) + \(\alpha\), where \(\alpha\) \(\in\) (-\(\pi\over 2\), \(\pi\over 2\)), n \(\in\) I<br><br>
+              <b>(g)</b> &nbsp; If sin \(\theta\) = 1, then \(\theta\) = 2n\(\pi\) + \(\pi\over 2\) = (4n + 1)\(\pi\over 2\), n \(\in\) I<br><br>
+              <b>(h)</b> &nbsp; If cos \(\theta\) = 1, then \(\theta\) = 2n\(\pi\), n \(\in\) I<br><br>
+              <b>(i)</b> &nbsp; If \(sin^2\theta\) = \(sin^2\alpha\) or \(cos^2\theta\) = \(cos^2\alpha\) or \(tan^2\theta\) = \(tan^2\alpha\), then \(\theta\) = n\(\pi\) \(\pm\) \(\alpha\), n \(\in\) I
+              </p>
+
+              <h2 style="font-size:22px;text-align:left;border-top:1px outset lightgrey;"><br>Different Strategies for solving trigonometric equations:</h2>
+
+              <h2 id="subheading3"style="font-size:20px;text-align:left;"><br><b>(a)</b> &nbsp; Solving trigonometric equations by factorisation</h2><br>
+
+        <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> If \(1\over 6\)sin x, cos x, tan x are in G.P. then the general solution for x is
+              </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Since \(1\over 6\)sin x, cos x, tan x are in G.P.<br><br>
+              \(\implies\) &nbsp; \(cos^2x\) = \(1\over 6\)sin x.tan x <br><br>
+              \(\implies\) &nbsp; 6\(cos^3x\) + \(cos^2x\) - 1 = 0<br><br>
+              \(\therefore\) &nbsp; (2cos x - 1)(3\(cos^2x\) + 2cos x + 1) = 0<br><br>
+              \(\implies\) &nbsp; cos x = \(1\over 2\) &nbsp; (other values of cos x are imaginary)<br><br>
+              \(\implies\) &nbsp; cos x = cos\(\pi\over 3\) &nbsp; \(\implies\) &nbsp; x = 2n\(\pi\) \(\pm\) \(\pi\over 3\)</p><br>
+        <button class="c" onclick="window.location.href='/as/examples/trigonometric-equation-examples.html'">More Examples</button>
+        <button class="b" onclick="window.location.href='/as/questions/trigonometric-equation-questions.html'">Try Questions</button>
+        </blockquote><br>
+         
+        <h2 id="subheading4"style="font-size:20px;text-align:left;border-top:1px outset lightgrey;"><br><b>(b)</b> &nbsp; Solving trigonometric equations by reducing it to a quadratic equation</h2><br>
+
+        <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> Find the number of solutions of tan x + sec x = 2cos x in [0,\(2\pi\)].
+              </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Here, tan x + sec x = 2cos x &nbsp; \(\implies\) &nbsp; sin x + 1 = 2\(cos^2x\)<br><br>
+              \(\implies\) &nbsp; 2\(sin^2x\) + sin x - 1 = 0 &nbsp; \(\implies\) &nbsp; sin x = \(1\over 2\), -1<br><br>
+              But sin x = -1 &nbsp; \(\implies\) &nbsp; x = \(3\pi\over 2\) &nbsp; for which tan x + sec x = 2cos x is not defined.<br><br>
+              Thus sin x  = \(1\over 2\) &nbsp; \(\implies\) &nbsp; x = \(\pi\over 6\), \(5\pi\over 6\)<br><br>
+              \(\implies\) &nbsp; number of solutions of tan x + sec x = 2cos x is 2.</p>
+        </blockquote>
+
+        <h2 id="subheading5"style="font-size:20px;text-align:left;border-top:1px outset lightgrey;"><br><b>(c)</b> &nbsp; Solving trigonometric equations by introducing an auxilliary argument</h2><br>
+
+        <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> Find the number of distinct solutions of sec x + tan x = \(\sqrt{3}\), where 0 \(\le\) x \(\le\) \(3\pi\). 
+              </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Here, sec x + tan x  = \(\sqrt{3}\) &nbsp; \(\implies\) &nbsp; sin x + 1 = \(\sqrt{3}\)cos x or \(\sqrt{3}\)cos x - sin x = 1<br><br>
+              Dividing both sides by \(\sqrt{a^2+b^2}\) i.e. 2, we get<br><br>
+              \(\implies\) &nbsp; \(\sqrt{3}\over 2\)cos x - \(1\over 2\)sin x = \(1\over 2\)<br><br>
+              \(\implies\) &nbsp; cos\(\pi\over 6\)cos x - sin\(\pi\over 6\)sin x = \(1\over 2\) &nbsp; \(\implies\) &nbsp; cos(x + \(\pi\over 6\)) = \(1\over 2\)<br><br>
+              As 0 \(\le\) x \(\le\) 3\(\pi\) &nbsp; \(\implies\) &nbsp; \(\pi\over 6\) \(\le\) x + \(\pi\over 6\) \(\le\) \(3\pi + {\pi\over 6}\) <br><br>
+              \(\implies\) &nbsp; x + \(\pi\over 6\) = \(\pi\over 3\), \(5\pi\over 3\), \(7\pi\over 3\) &nbsp; \(\implies\) &nbsp; \(\pi\over 6\), \(3\pi\over 2\), \(13\pi\over 6\).<br><br>
+              But at x = \(3\pi\over 2\), tan x and sec x is not defined.<br><br>
+              \(\therefore\) &nbsp; Total number of solutions are 2.</p>
+        </blockquote>
+
+        <h2 id="subheading6"style="font-size:20px;text-align:left;border-top:1px outset lightgrey;"><br><b>(d)</b> &nbsp; Solving trigonometric equations by transforming sum of trigonometric functions into product</h2><br>
+
+        <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> Solve : cos x + cos 3x + cos 5x + cos 7x = 0
+              </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>We have cos x + cos 7x + cos 3x + cos 5x = 0<br><br>
+              \(\implies\) &nbsp; 2cos 4x cos 3x + 2cos 4x cos x = 0 &nbsp; \(\implies\) &nbsp; cos 4x(cos 3x + cos x) = 0<br><br>
+              \(\implies\) &nbsp; cos 4x(2cos 2x cos x) = 0<br><br>
+              \(\implies\) &nbsp; Either cos x = 0 &nbsp; \(\implies\) &nbsp; x = (\(2n_1 + 1\))\(\pi\over 2\), \(n_1\) \(\in\) I<br><br>
+              or &nbsp; cos 2x = 0 &nbsp; \(\implies\) &nbsp; x = (\(2n_2 + 1\))\(\pi\over 4\), \(n_2\) \(\in\) I<br><br>
+              or &nbsp; cos 4x = 0 &nbsp; \(\implies\) &nbsp; x = (\(2n_3 + 1\))\(\pi\over 8\), \(n_3\) \(\in\) I</p>
+        </blockquote>
+
+        <h2 id="subheading7"style="font-size:20px;text-align:left;border-top:1px outset lightgrey;"><br><b>(e)</b> &nbsp; Solving trigonometric equations by transforming a product into sum</h2><br>
+
+        <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> Solve : cosx cos2x cos 3x = \(1\over 4\)
+              </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>(2cosx cos3x)cos2x = \(1\over 2\) &nbsp; \(\implies\) &nbsp; (cos2x + cos4x)cos2x = \(1\over 2\)<br><br>
+              \(\implies\) &nbsp; \(1\over 2\)[\(2cos^22x\) + 2cos4x cos2x] = \(1\over 2\) &nbsp; \(\implies\) &nbsp; 1 + cos4x + 2cos4xcos2x = 1<br><br>
+              \(\therefore\) &nbsp; cos 4x(1 + 2cos2x) = 0<br><br>
+              \(\implies\) &nbsp; cos 4x = 0 &nbsp; or &nbsp; (1 + 2cos2x) = 0<br><br>
+              Now from the first equation : cos 4x = 0 = cos(\(\pi\over 2\))<br><br>
+              \(\therefore\) &nbsp; 4x = (2n + 1)\(\pi\over 2\) &nbsp; \(\implies\) &nbsp; x = (2n + 1)\(\pi\over 8\), n \(\in\) I<br><br>
+              for &nbsp; n = 0, x = \(\pi\over 8\); n = 1, x = \(3\pi\over 8\); n = 2, x = \(5\pi\over 8\); n = 3, x = \(7\pi\over 8\);<br><br>
+              and from the second equation : cos 2x = -\(1\over 2\) = -cos(\(\pi\over 3\)) = cos(\(\pi-{\pi\over 3}\)) = cos(\(2\pi\over 3\))<br><br>
+              \(\therefore\) &nbsp; 2x = 2k\(\pi\) \(\pm\) \(2\pi\over 3\) &nbsp; \(\therefore\) &nbsp; x = k\(\pi\) \(\pm\) \(\pi\over 3\), k \(\in\) I<br><br>
+              again for k = 0, x = \(\pi\over 3\); k = 1, x = \(2\pi\over 3\) &nbsp; (\(\because\) 0 \(\le\) x \(\le\) \(\pi\))<br><br>
+              \(\therefore\) &nbsp; x = \(\pi\over 8\), \(\pi\over 3\), \(3\pi\over 8\), \(5\pi\over 8\), \(2\pi\over 3\), \(7\pi\over 8\)</p>
+        </blockquote>
+
+        <h2 id="subheading8"style="font-size:20px;text-align:left;border-top:1px outset lightgrey;"><br> Trigonometric Inequalities : </h2>
+
+        <p>There is no general rule to solve trigonometric inequalities and the same rules of algebra are valid provided the domain and range of trigonometric function should be kept in mind.
+
+        <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> Find the solution set of inequality sin x > 1/2.
+              </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>when sin x = \(1\over 2\), the two values of x between 0 and \(2\pi\) are \(pi\over 6\) and \(5pi\over 6\).<br><br>
+              From the graph of y = sinx,  it is obvious that it is between 0 and \(2\pi\),<br><br>
+              sinx > \(1\over 2\) for \(\pi/6\) < x < \(5\pi/6\)<br><br>
+              Hence, sinx > 1/2<br><br>
+              \(\implies\) \(2n\pi\) + \(\pi\over 6\) < x < \(2n\pi\) + \(5\pi\over 6\), n \(\in\) I</p>
+        </blockquote><br>
+
+        <button class="prev" onclick="window.location.href='/as/trigonometry1.html'">PREV</button>
+        <button class="next" onclick="window.location.href='/as/logarithm.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#heading" class="anchor">Trigonometric Equations</a>
+                </li>
+                <li>
+                  <a href="#subheading1" class="anchor">Solution of Trigonometric Equation</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">General solutions of some Trigonometric functions</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Solving Trigonometric equations by factorisation</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">Solving Trigonometric equations by reducing it to a quadratic equation</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor"> Solving Trigonometric equations by introducing an auxilliary argument</a>
+                </li>
+                <li>
+                  <a href="#subheading6" class="anchor">Solving Trigonometric equations by transforming sum of trigonometric functions into product</a>
+                </li>
+                <li>
+                  <a href="#subheading7" class="anchor">Solving Trigonometric equations by transforming a product into sum</a>
+                </li>
+                <li>
+                  <a href="#subheading8" class="anchor">Trigonometric Inequalities </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

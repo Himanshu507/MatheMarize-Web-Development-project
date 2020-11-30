@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Permutation & Combination Examples - Mathemerize.com</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mathemerize.com provides free maths tutorials, examples and questions for practice. Students can find solutions to their math problems instantly by using these tutorials.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, circle,  examples, questions, tutorials, maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents").load("/as/examples/load/contents.html"); });</script>
+  <script>$(document).ready(function () { $(".contents1").load("/as/examples/load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("/as/examples/load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("/as/examples/load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("/as/examples/load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm_ques.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm_ques.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;font-size:25px;">PERMUTATION & COMBINATION</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example 1 : </span> If all the letters of the word 'RAPID' are arranged in all possible manner as they are in a dictionary, then find the rank of the word 'RAPID'.</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>First of all, arrange all letters of given word alphabetically : 'ADIPR'<br><br>
+			Total number of words starting with A _ _ _ _ = 4! = 24<br><br>
+			Total number of words starting with D _ _ _ _ = 4! = 24<br><br>
+			Total number of words starting with I _ _ _ _ = 4! = 24<br><br>
+			Total number of words starting with P _ _ _ _ = 4! = 24<br><br>
+			Total number of words starting with R A D _ _ = 2! = 2<br><br>
+			Total number of words starting with R A I _ _ = 2! = 2<br><br>
+			Total number of words starting with R A P D _ = 1 = 1<br><br>
+			Total number of words starting with R A P I _ = 1 = 1<br><br>
+			\(\therefore\) Rank of the word RAPID = 24 + 24 + 24 + 24 + 2 + 2 + 1 + 1 = 102</p>
+            </blockquote><hr>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example 2 : </span>  Find the number of ways of dividing 52 cards among 4 players equally such that each gets exactly one Ace.</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Total number of ways of dividing 48 cards(Excluding 4 Aces) in 4 groups = \(48!\over (12!)^4 4!\)<br><br>Now, distribute exactly one Ace to each group of 12 cards. Total number of ways = \(48!\over (12!)^4 4!\) \(\times\) 4!<br><br>Now, distribute these groups of cards among four players <br><br>= \(48!\over (12!)^4 4!\) \(\times\) 4!4! = = \(48!\over (12!)^4\) \(\times\) 4! 
+            </blockquote><hr>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example 3 : </span> How many numbers can be formed with the digits 1, 2, 3, 4, 3, 2, 1 so that the odd digits always occupy the odd places?</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>There are 4 odd digits (1, 1, 3, 3) and 4 odd places(first, third, fifth and seventh). At these places the odd digits can be arranged in \(4!\over 2!2!\) = 6<br><br>Then at the remaining 3 places, the remaining three digits(2, 2, 4) can be arranged in \(3!\over 2!\) = 3 ways<br><br>\(\therefore\) &nbsp; &nbsp; The required number of numbers = 6 \(\times\) 3 = 18</p>
+            </blockquote><hr>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example 4 : </span> In how many ways can 5 different mangoed, 4 different oranges & 3 different apples be distributed among 3 children such that each gets atleast one mango?</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>5 different mangoes can be distributed by following ways among 3 children such that each gets at least 1 : <br><br>Total number of ways : (\(5!\over 3!1!1!2!\) + \(5!\over 2!2!2!\)) \(\times\) 3!<br><br>Now, the number of ways of distributing remaining fruits (i.e. 4 oranges + 3 apples) among 3 children = \(3^7\) (as each fruit has 3 options).<br><br>\(\therefore\) &nbsp; &nbsp; Total number of ways = (\(5!\over 3!2!\) + \(5!\over {(2!)}^3\)) \(\times\) 3! \(\times\) \(3^7\)</p>
+            </blockquote><br>
+
+            
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

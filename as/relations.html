@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Relations - Reflexive, Symmetric & Transitive | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn cartesian product of sets and reflexive, symmetric, transitive and equivalence relation and inverse relation.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,cartesian product, inverse relation, identity relation,reflexive,symmetric,transitive,equivalence relation,posets, maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">RELATIONS</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+
+            <h2 id="subheading1"style="font-size:17px;text-align:left;">Cartesian Product</h2>
+    
+		    <p>The cartesian product of two sets A, B is a non-void set of all ordered pair (a,b),<br>where a \(\in\) A and b \(\in\) B. This is denoted by A \(\times\) B.<br>
+		    \(\therefore\) &nbsp;&nbsp; A \(\times\) B = {(a,b) \(\forall\) a \(\in\) A and b \(\in\) B}<br>
+		    e.g. &nbsp;&nbsp; A = {1,2}, B = {a,b}<br>
+		    A \(\times\) B = {(1,a), (1,b), (2,a), (2,b)}</p>
+
+		    <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            (i) A \(\times\) B \(\ne\) B \(\times\) A &nbsp; &nbsp; (Non-commutative)<br><br>
+		    (ii) n(A \(\times\) B) = n(A)n(B) and n(P(A \(\times\) B)) = \(2^{n(A)n(B)}\)<br><br>
+		    (iii) A = \(\phi\) and B = \(\phi\) \(\iff\) A \(\times\) B = \(\phi\)<br><br>
+		    (iv) If A and B are two non-empty sets having n elements in common, then (A \(\times\) B) and (B \(\times\) A) have \(n^2\) elements in common<br><br>
+		    (v) A \(\times\) (B \(\cup\) C) = (A \(\times\) B) \(\cup\) (A \(\times\) C)<br><br>
+		    (vi) A \(\times\) (B \(\cap\) C) = (A \(\times\) B) \(\cap\) (A \(\times\) C)<br><br>
+		    (vii)  A \(\times\) (B - C) = (A \(\times\) B) - (A \(\times\) C)<br></li>
+            </ul></i>
+            </p>
+            </blockquote>
+
+		    <h2 id="subheading2"style="font-size:17px;text-align:left;border-top:1px outset lightgrey"><br>Relation</h2>
+
+		   	<p>Every non-zero subset of A \(\times\) B defined a relation from set A to set B.<br>If R is relation from A \(\rightarrow\) B
+		   	<br>R : {(a,b) | (a,b) \(\in\) A \(\times\) B and a R b}</p>
+
+		    <p> Let A and B be two non empty sets and R : A \(\rightarrow\) B be a relation such that R : {(a,b) | (a,b) \(\in\) R a \(\in\) A and b \(\in\) B}<br>
+		    (i) 'b' is called image of 'a' under R.<br>
+		    (ii) 'a' is called pre-image of 'b' under R.<br>
+		    (iii) Domain of R : Collection of all elements of A which has a image in B.<br>
+		    (iv) Range of R : Collection of all elements of B which has a pre-image in A.
+		    </p>
+
+		    <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            (1) It is not necessary that each and every element of set A has a image in set B and each and every element of set B has preimage in set A.<br><br>
+		    (2) Elements of set A having image in B is not necessarily unique.<br><br>
+		    (3) Basically relation is the number of subsets of A \(\times\) B<br><br>
+		    Number of relations  = no. of ways of selecting a non-zero subset of A \(\times\) B<br><br>
+		     = \(^{mn}C_1\)+ \(^{mn}C_2\) + ........ + \(^{mn}C_{mn}\) = \(2^{mn} - 1\)<br><br>
+		     Total number of relation = \(2^{mn}\)(including void relation)</i>
+            </p>
+            </blockquote>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> If A = {1, 3, 5, 7}, B = {2, 4, 6, 8}<br>
+		      Relation is aRb \(\implies\) a > b, a \(\in\) A, a \(\in\) B</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>R = {(3, 2), (5, 2), (5, 4), (7, 2), (7, 4), (7, 6)}<br>
+		      Domain = {3, 5, 7}<br>
+		      Range = {2, 4, 6}</p><br>
+              <button class="c" onclick="window.location.href='/as/examples/relations-examples.html'">More Examples</button>
+              <button class="b" onclick="window.location.href='/as/questions/relations-questions.html'">Try Questions</button>
+            </blockquote><br>
+
+		    <h2 id="subheading3"style="font-size:17px;text-align:left;border-top:1px outset lightgrey"><br>Inverse Relation</h2>
+
+		     <p>If relation R is defined from A to B, then inverse relation would be defined form B to A, i.e.</br>
+		     R : A \(\rightarrow\) B \(\implies\) aRb where a \(\in\) A, b \(\in\) B<br>
+		     \(R^{-1}\) : B \(\rightarrow\) A \(\implies\) bRa where a \(\in\) A, b \(\in\) B<br>
+		     Domain of R = Range of \(R^{-1}\)<br>
+		     and &nbsp; Range of R = Domain of \(R^{-1}\)<br>
+		     &nbsp; \(\therefore\) &nbsp; \(R^{-1}\) = {(b, a) | (a, b) \(\in\) R}<br>
+		     A relation R is defined on the set of 1st ten natural numbers.<br>
+		     e.g. &nbsp; N is a set of first 10 natural numbers.<br>
+		     aRb \(\implies\) a + 2b = 10<br>
+		     R = {(2, 4), (4, 3), (6, 2), (8, 1)}<br>
+		     \(R^{-1}\) = {(4, 2), (3, 4), (2, 6), (1, 8)}</p>
+
+		     <h2 id="subheading4"style="font-size:17px;text-align:left;border-top:1px outset lightgrey"><br>Identity Relation</h2>
+
+		     <p>A relation defined on a set A is said to be an identity relation if each and every element of A is related to itself & only to itself.<br>
+		     e.g. &nbsp;  A relation defined on the set of natural numbers is<br>
+		     aRb \(\implies\) a = b where a & b \(\in\) N<br>
+		     R = {(1, 1), (2, 2), (3, 3), ......}<br>
+		     R is an identity relation</p>
+
+		     <h2 id="subheading5"style="font-size:17px;text-align:left;border-top:1px outset lightgrey"><br>Classification of Relations : Reflexive,Symmetric and Transitive</h2>
+
+		     <h3 id="subheading6"style="font-size:16px;text-align:left;">(i) Reflexive : </h3>
+		   
+		     <p>A relation R on a set A is said to be reflexive if every element of A is related to itself.<br>
+		     i.e. if (a, b) \(\in\) R then (a,a) \(\in\) R. However if there is a single ordered pair of (a, b) \(\in\) R such (a, a) \(\notin\) R, then R is not reflexive.</p>
+
+		     <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>A relation defined on set of natural numbers<br>
+		      aRb \(\implies\) 'a' divides 'b' a, b \(\in\) N
+		      R would always contain (a, a) because every natural number divides itself and hence it is a reflexive relation.<br>
+		      <b>Note : </b></span>Every Identity relation is reflexive relation but every reflexive relation need not be an Identity.</p>
+            </blockquote>
+
+		     <h3 id="subheading7"style="font-size:16px;text-align:left;">(ii) Symmetric : </h3>
+
+		     <p>A relation defined on a set is said to be symmetric if aRb \(\implies\) bRa<br>i.e. if (a, b) \(\in\) R then (b, a) must be necessarily there in the same relation.</p>
+
+		     <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>A relation defined on set of lines<br>
+		      (1) &nbsp; &nbsp; aRb  \(\implies\) a | | b<br>
+		      It is a symmetric relation because if line 'a' is | | to 'b' then the line 'b' is | | to 'a'.<br>
+		      where (a, b) \(\in\) L (L is set of | | lines)<br>
+		      (2) &nbsp; &nbsp; \(L_1\)R\(L_2\) \(\implies\) \(L_1\)\(\perp\)\(L_2\) It is a symmetric relation<br>
+		       \(L_1\), \(L_2\) \(\in\) L (L is a set of lines)<br>
+		      If R is symmetric <br>
+		      (1) &nbsp; &nbsp; R = \(R^{-1}\)<br>
+		      (2) &nbsp; &nbsp; Range of R = Domain of R</p>
+            </blockquote>
+
+		    <h3 id="subheading8"style="font-size:16px;text-align:left;">(iii) Transitive : </h3>
+
+		    <p>A relation on set A is said to be a transitive if aRb and bRc implies aRc<br>i.e. (a, b) \(\in\) R and (b, c) \(\in\) R, then (a, c) \(\in\) R<br> and a, b, c need not to be distinct.</p>
+
+		    <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>A relation R defined on a set of natural numbers N with rule aRb \(\implies\) 
+		      a\(\leq\)b<br>
+		      Let R : {(1, 2), (1, 1)}. on set {1, 2},<br>
+		      In this relation a, b, c are not distinct but it is transitive.</p>
+            </blockquote>
+
+		     <h2 id="subheading9"style="font-size:17px;text-align:left;border-top:1px outset lightgrey"><br>Equivalence Relation</h2>
+
+		     <p>If a relation is Reflexive, Symmetric and Transitive, then it is said to be an equivalance relation.<br>
+		     e.g &nbsp; A relation defined on N<br>
+		      &nbsp; &nbsp; &nbsp; &nbsp; xRy \(\implies\) x = y<br>
+		      &nbsp; &nbsp; &nbsp; &nbsp; R is an equivalence relation.</p>
+
+		     <h2 id="subheading10"style="font-size:17px;text-align:left;border-top:1px outset lightgrey"><br>Posets</h2>
+
+		     <p>A relation R on a set P is called an partial relation order if it is reflexive, antisymmetric and transitive. That means that for all x, y and z in P we have:<br>
+		     <ul> 
+		     <li>x R x;</li>
+		     <li>if x R y and y R x, then x = y;</li>
+		     <li>if x R y and y R z, then x R z.</li>
+		     </ul>
+		     </p>
+
+		     <p>
+		     The pair (P, R) is called a partially ordered set, or for short, a poset.<br><br>
+		     Two elements x and y in a poset (P, R) are called comparable if x R y or y R x.<br><br>
+		     If any two elements x,y \(\in\) P are comparable, so we have x R y or y R x, then the relation is called a linear order.
+		     </p><br>
+		            
+            <button class="prev" onclick="window.location.href='/as/sets.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/permutation-combination.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#subheading1" class="anchor">Cartesian Product</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">Relation</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Inverse Relation</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">Identity Relation</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor">Classification of Relations</a>
+                </li>
+                <li>
+                  <a href="#subheading6" class="anchor">Reflexive</a>
+                </li>
+                <li>
+                  <a href="#subheading7" class="anchor">Symmetric</a>
+                </li>
+                <li>
+                  <a href="#subheading8" class="anchor">Transitive</a>
+                </li>
+                <li>
+                  <a href="#subheading9" class="anchor">Equivalence Relation</a>
+                </li>
+                <li>
+                  <a href="#subheading10" class="anchor">Posets</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

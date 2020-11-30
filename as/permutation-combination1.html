@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Circular Permutation - Total Distribution | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn circular permutation,total distribution of distinct and alike objects, total number of combination and dearrangement.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,maths tutorials,multiplication principle,addition priciple,
+  properties,formation of groups,permutation of alike objects,circular permutation,total distribution,dearrangement, maths, study maths, mathematics, online study material">
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="font-size:25px;text-align: center;">PERMUTATION & COMBINATION</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+
+              <h2 id="subheading1"style="font-size:17px;text-align:left;">Permutations of alike objects</h2>
+
+              <h3 id="subheading2" style="font-size:16px;text-align:left;"> Case-1 :  Taken all at a time</h3>
+
+              <p>The number of permutations of n things taken all at a time: when p of them are similar of one type, q of them are similar of second type, r of them are similar of third type and the remaining n - (p + q + r) are all different is : <br>\(n!\over {p! q! r!}\).</p>
+
+              <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> In how many ways the letter of the word "ARRANGE" can be arranged without altering the relative position of vowels & consonants.</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span> The consonants in their position can be arranged in \(4!\over 2!\) = 12 ways. <br><br>
+              The vowels in thier position can be arranged in \(3!\over 2!\) = 3 ways.<br><br>
+              \(\therefore\) &nbsp;&nbsp; total number of arrangements = \(12\times 3\) = 36.</p>
+            </blockquote>
+
+            <h3 id="subheading3" style="font-size:16px;text-align:left;">Case-2 :  Taken some at a time</h3>
+
+             <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> Find the total number of 4 letter words formed using four letters from the word 
+      		  "PARALLELOPIPED".</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Given letters are PPP, LLL, AA, EE, R, O, I, D. <br><br>
+      		  Case 1: All distinct, &nbsp;&nbsp; No. of words = \(^{8}C_4\).4! = 1680<br><br>
+      		  Case 2: 2 alike, 2 distinct, &nbsp;&nbsp; No. of words = \(^{4}C_1\).\(^{7}C_2\).\(4!\over 2!\) = 1008
+      		  <br><br>
+      		  Case 3: 2 alike, 2 other alike, &nbsp;&nbsp; No. of words = \(^{4}C_2\).\(4!\over 2! 2!\) = 36<br><br>
+      		  Case 4: 3 alike, 1 distinct, &nbsp;&nbsp; No. of words = \(^{2}C_1\).\(^{7}C_1\).\(4!\over 3!\) = 56
+      		 <br><br>
+      		  \(\therefore\) &nbsp;&nbsp; Total no. of words = 2780</p>
+            </blockquote>
+
+            <h2 id="subheading4"style="font-size:17px;text-align:left;border-top: 1px outset lightgrey;"><br>Circular Permutation</h2>  
+
+            <p> (i) The number of circular permutation of n different things taken all at a time is: (n - 1)!.<br><br>
+		    If clockwise & anticlockwise circular permutations are considered to be same, then it is: \((n - 1))!\over 2\).<br><br>
+		    (ii) The number of circular permutations of n different things taking r at a time distinguishing clockwise & anticlockwise arrangements is : \(^{n}P_r\over r\).<br><br>
+             </p>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>In how many ways can 5 boys and 5 girls be seated at a round table so that no two girls are together?</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>Leaving one seat vacant between two boys, 5 boys may be seated in 4! ways. Then at remaining 5 seats, 5 girls sit in 5! ways.
+     		  <br><br> Hence, the required number of ways = \(4!\times 5!\).</p><br>
+     		      <button class="c" onclick="window.location.href='/as/examples/permutation-combination-examples.html'">More Examples</button>
+              <button class="b" onclick="window.location.href='/as/questions/permutation-combination-questions.html'">Try Questions</button>
+            </blockquote><br>
+
+            <h2 id="subheading5"style="font-size:17px;text-align:left;border-top: 1px outset lightgrey;"><br>Total number of Combinations </h2>
+
+             <p><b>(a)</b> &nbsp; Given n different objects, the number of ways of selecting at least one of them is, \(^{n}C_1\) + \(^{n}C_2\) + \(^{n}C_3\) +.......+ \(^{n}C_n\). This can also be stated as the total number of combinations of n distinct things.<br><br>
+             <b>(b)</b> &nbsp; (i) &nbsp; Total number of ways in which it is possible to make a selection by taking some or all out of  p + q + r +.......things, where p are alike of one kind, q alike of a second kind, r alike of third kind and so on is given by : <br> (p + 1)(q + 1)(r + 1)..........-1.<br><br>
+              &nbsp; &nbsp; &nbsp; &nbsp; (ii) &nbsp; The total number of ways of selecting one or more things from p identical things of one kind, q identical things of second kind, r identical things of third kind and n different things is given by:<br>
+    		 (p + 1)(q + 1)(r + 1)\(2^n\) - 1.  
+             </p>
+
+             <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span> There are 3 books of mathematics, 4 of science and 5 of english. How many different collections can be made such that each collection consists of-<br>
+              (i) one book of each subject?<br>
+      		  (ii) at least one book of each subject?<br>
+      		  (iii) at least one book of english?</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>(i) \(^{3}C_1\times ^{4}C_1\times ^{5}C_1\) = 60  <br><br>
+      		 (ii) \((2^3 - 1)(2^4 - 1)(2^5 -1)\) = \(7\times 15\times 31\) = 3255<br><br>
+      		 (iii) \((2^5 - 1)(2^3)(2^4)\) = \(31\times 128\) = 3968</p>
+            </blockquote>
+
+            <h2 id="subheading6"style="font-size:17px;text-align:left;border-top: 1px outset lightgrey;"><br>Total Distribution : Distinct & alike objects</h2>
+
+            <h3 id="subheading7" style="font-size:16px;text-align:left;">(a) &nbsp; Distribution of distinct objects :</h3>
+
+		    <p>Number of ways in which n distinct things can be distributed to p persons if there is no restriction to the number of things recieved by them is given by : \(p^n\)</p>
+
+		    <h3 id="subheading8"style="font-size:16px;text-align:left;">(b) &nbsp; Distribution of alike objects :</h3>
+
+		    <p>Number of ways to distribute n alike things among p persons so that each may get none, one or more thing(s) is given by \(^{n+p-1}C_{p-1}\)</p>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>In how many ways can 5 different mangoes, 4 different oranges & 3 different apples be distributed among 3 children such that each gets at least one mango ?</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>5 different mangoes can be distributed by following ways among 3 children such that each gets at least 1 : <br><br>
+              Total number of ways : (\(5!\over 3! 1! 1! 2!\) + \(5!\over 2! 2! 2!\))\(\times 3!\)<br><br>
+		      Now, the number of ways of distributing remaining fruits (i.e. 4 oranges + 3 apples) among 3 children =
+		      \(3^7\) (as each fruit has three options).
+		      <br><br>
+		      \(\therefore\) &nbsp;&nbsp; Total no. of ways = (\(5!\over 3! 2!\) + \(5!\over {(2!)^3}\))\(\times 3!\times 3^7\)</p>
+            </blockquote>
+
+            <h2 id="subheading9" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Dearrangement</h2> 
+
+            <p> There are n letters and n corresponding envelopes. The number of ways in which letters can be placed in the envelopes (one letter in each envelope) so that no letter is placed in correct envelope is<br><br>
+            n![1 - \(1\over 1!\) + \(1\over 2!\) +........+\({(-1)^n}\over n!\)]
+            </p>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>A person writes letters to six friends and addresses the corresponding envelopes. In how many ways can the letters be placed in the envelope so that all the letters are in the wrong envelopes.</p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>The number of ways in which all the letters can be placed in wrong envelopes.
+		     <br><br> = 6!(1 - \(1\over 1!\) + \(1\over 2!\) - \(1\over 3!\) + \(1\over 4!\) - \(1\over 5!\) + \(1\over 6!\)) = 
+		     720(\(1\over 2\) - \(1\over 6\) + \(1\over 24\) - \(1\over 120\) + \(1\over 720\))<br><br> 
+		      = 360 - 120 + 30 - 6 + 1 = 265.</p>
+            </blockquote><br>
+   
+            <button class="prev" onclick="window.location.href='/as/permutation-combination.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/limits.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#subheading1" class="anchor">Permutations of alike objects</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">Case-1 : Taken all at a time</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Case-2 : Taken some at a time</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">Circular Permutation</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor">Total number of Combinations</a>
+                </li>
+                <li>
+                  <a href="#subheading6" class="anchor">Total Distribution</a>
+                </li>
+                <li>
+                  <a href="#subheading7" class="anchor">Distribution of distinct objects</a>
+                </li>
+                <li>
+                  <a href="#subheading8" class="anchor">Distribution of alike objects</a>
+                </li>
+                <li>
+                  <a href="#subheading9" class="anchor">Dearrangement</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+

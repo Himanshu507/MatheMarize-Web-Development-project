@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Limits - Indeterminate Forms of limits | Mathemerize</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="In this tutorial you will learn to evaluate left hand and right hand limit, indeterminate forms of limits and general method to evaluate those limits.">
+
+  <meta name="keywords" content="logarithm, sequences, series, probability, statistics, sets, relations, limits, continutity, differentiability, permutation, combination,function, trignometry, inverse trignometric function, trignometric equation, trignometric identities, examples, questions, tutorials,maths tutorials, left hand limit,right hand limit,fundamental theorem on limits,indeteterminate forms of limits,sandwich theorem,squeeze play theorem,limits of trignometric functions,limits of exponential functions,limits using series expansion,maths, study maths, mathematics, online study material">
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-1648463943795678",
+      enable_page_level_ads: true
+    });
+  </script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142146209-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-142146209-1');
+  </script>
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="css/style-purple.css" rel="stylesheet">
+  <link href="css/dropdown.css" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script>$(document).ready(function () { $(".contents1").load("load/contents1.html"); });</script>
+  <script>$(document).ready(function () { $(".contents2").load("load/contents2.html"); });</script>
+  <script>$(document).ready(function () { $(".contents").load("load/contents.html"); });</script>
+  <script>$(document).ready(function () { $("#search").load("load/side.html"); });</script>
+  <script>$(document).ready(function () { $("#footer").load("load/footer.html"); });</script>
+    
+  <!--Mathjax-->
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+</head>
+
+<body>
+  <!--/ Nav Star /-->
+  <nav style="background-color: white;border-bottom:1px ridge #3498DB" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="/"><img src="img/logo.png" height="60" width="85" alt="Logo"></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/logarithm.html">Tutorials</a>
+            <div class="dropdown-content contents" >
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll dropbtn" href="/as/examples/logarithm-examples.html">Examples</a>
+            <div class="dropdown-content contents1">
+              
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link js-scroll drpbtn" href="/as/questions/logarithm-questions.html">Questions</a>
+            <div class="dropdown-content contents2">
+
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="/as/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Blog-Single Star /-->
+  <section class="blog-wrapper sect-pt4" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="post-box">
+            <div class="post-meta">
+              <h1 id="heading"class="article-title" style="text-align: center;">LIMITS</h1>
+            </div>
+            <div class="article-content">
+            <div class="content">
+              <p style="border-bottom: 1px inset lightgrey;">Let f(x) be defined on an open interval about 'a' except possibly at 'a'
+              itself. If f(x) gets arbitrarily close to L(a finite number) for all x sufficiently close to 'a' we say that f(x) approaches the limit L as x approaches 'a' and we write \(\displaystyle{\lim_{x \to a}}\) f(x) = L and say "the limit of f(x), as x approaches a, equals L".<br><br>This implies if we can make the value of f(x) arbitrarily close to L(as close to L as we like) by taking x to be sufficiently close to a(on either side of a) but not equal to a.<br><br></p>
+
+              <h2 id="subheading1"style="font-size:17px;text-align:left;">Left hand limit and Right hand limit of a function</h2>
+
+              <p>The value to which f(x) approaches, as tends to 'a' from the left hand side (x \(\rightarrow\) \(a^{-}\)) is called left hand limit of f(x) at x = a. Symbolically, LHL =  \(\displaystyle{\lim_{x \to a^-}}\) f(x) = \(\displaystyle{\lim_{h \to 0}}\) f(a - h).<br><br> The value to which f(x) approaches, as tends to 'a' from the right hand side (x \(\rightarrow\) \(a^{+}\)) is called right hand limit of f(x) at x = a. Symbolically, RHL = \(\displaystyle{\lim_{x \to a^+}}\) f(x) = \(\displaystyle{\lim_{h \to 0}}\) f(a + h).<br><br>
+              <b>Limit of a function f(x) is said to exist as, x \(\rightarrow\) a when \(\displaystyle{\lim_{x \to a^-}}\) f(x) = \(\displaystyle{\lim_{x \to a^+}}\) f(x) = Finite quantity</b>
+              </p>
+
+            <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            In \(\displaystyle{\lim_{x \to a}}\) f(x), x \(\rightarrow\) a necessarily implies x \(\ne\) a. This is while evaluating limit at x = a, we are not concerned with the value of the function at x = a. In fact the function may or may not be defined at x = a. Also it is necessary to note that if f(x) is defined only on one side of 'x = a', one sided limits are good enough to establish the existence of limits, & if f(x) is defined on either side of 'a' both sided limits are to be considered.<br><br> As in \(\displaystyle{\lim_{x \to a}}\) \(\cos^{-1}x\) = 0, though f(x) is not defined for x > 1, even in it's immediate vicinity.</i>
+            </p>
+            </blockquote>
+
+            <h2 id="subheading2"style="font-size:17px;text-align:left;border-top: 1px outset lightgrey;"><br>Fundamental theorem on limits
+            </h2>
+
+            <p>
+			    Let \(\displaystyle{\lim_{x \to a}}\) f(x) = <i>l</i> & 
+			    \(\displaystyle{\lim_{x \to a}}\) g(x) = m. If <i>l</i> & m exist finitely then:<br><br>
+			    (a) &nbsp; Sum rule : \(\displaystyle{\lim_{x \to a}}\) {f(x) + g(x)} = <i>l</i> + m<br><br>
+			    (b) &nbsp; Difference rule : \(\displaystyle{\lim_{x \to a}}\) {f(x) - g(x)} = <i>l</i> - m<br><br>
+			    (c) &nbsp; Product rule : \(\displaystyle{\lim_{x \to a}}\) f(x).g(x) = <i>l</i>.m<br><br>
+			    (d) &nbsp; Quotient rule : \(\displaystyle{\lim_{x \to a}}\) \(f(x)\over g(x)\) = \(l\over m\)<br><br>
+			    (e) &nbsp; Constant multiple rule : \(\displaystyle{\lim_{x \to a}}\) kf(x) = k \(\displaystyle{\lim_{x \to a}}\) f(x)<br><br>
+			    (f) &nbsp; Power rule : If m and n are integers then \(\displaystyle{\lim_{x \to a}}\) \([f(x)]^{m/n}\) = \(l^{m/n}\) provided
+			    \(l^{m/n}\) is a real number.<br><br>
+			    (g) &nbsp; \(\displaystyle{\lim_{x \to a}}\) f[g(x)] = f(\(\displaystyle{\lim_{x \to a}}\) g(x)) = f(m); provided f(x) is continuous at x = m.
+            </p>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">For Example :</span>\(\displaystyle{\lim_{x \to a}}\) ln(g(x)) = ln[\(\displaystyle{\lim_{x \to a}}\) g(x)] = ln(m); provided lnx is continuous at x = m, m = \(\displaystyle{\lim_{x \to a}}\) g(x).</p>
+            </blockquote>
+
+            <h2 id="subheading3" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>Indeterminate Forms</h2> 
+
+            <p>\(0\over 0\), \(\infty \over \infty\), \(\infty - \infty\),\(0\times \infty\), \(1^{\infty}\), \(0^0\), \({\infty}^0\)
+            </p>
+
+            <blockquote class="blockquote">
+            <p style="font-size:16px;font-family:helvetica;text-align:left;"><b>NOTE : </b></p>
+            <p style="font-size:16px;font-family:lucida;text-align:left;"><i>
+            (i) Here 0, 1 are not exact, infact both are approaching to their corresponding values.<br>
+            (ii) We cannot plot \(\infty\) on the paper. Infinity is a symbol & not a number. It does not obey the laws of elementary algebra.</i>
+            </p>
+            </blockquote>
+
+             <h2 id="subheading4" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>General methods to be used to evaluate limits</h2> 
+
+             <h2 id="subheading5" style="font-size:16px;text-align:left;">(a) Factorisation</h2> 
+
+            <p>\(\displaystyle{\lim_{x \to a}}\) \(x^n - a^n\over {x - a}\) = n\(a^{n - 1}\) 
+            </p>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Evaluate : \(\displaystyle{\lim_{x \to 2}}\) [\(1\over {x - 2}\) - \(2(2x - 3)\over {x^3 - 3x^2 + 2x}\)] </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>We have<br><br>
+		      \(\displaystyle{\lim_{x \to 2}}\) [\(1\over {x - 2}\) - \(2(2x - 3)\over {x^3 - 3x^2 + 2x}\)] = 
+		      \(\displaystyle{\lim_{x \to 2}}\) [\(1\over {x - 2}\) - \(2(2x - 3)\over {x(x - 1)(x - 2)}\)]<br><br>
+		      = \(\displaystyle{\lim_{x \to 2}}\) [\(x^2 - 5x + 6\over {x(x - 1)(x - 2)}\)] = 
+		      \(\displaystyle{\lim_{x \to 2}}\) [\((x - 2)(x - 3)\over {x(x - 1)(x - 2)}\)] = 
+		      \(\displaystyle{\lim_{x \to 2}}\) [\(x - 3\over {x(x - 1)}\)] = \(-1\over 2\)</p><br>
+            </blockquote>
+
+             <h2 id="subheading6" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(b) Rationalization or double rationalization</h2> 
+
+             <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Evaluate : \(\displaystyle{\lim_{x \to 1}}\) [\({4 - \sqrt{15x + 1}}\over  {2 - \sqrt{3x + 1}}\)] </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>
+              \(\displaystyle{\lim_{x \to 1}}\) [\({4 - \sqrt{15x + 1}}\over {2 - \sqrt{3x + 1}}\)]<br><br>
+		      = \(\displaystyle{\lim_{x \to 1}}\) \({(4 - \sqrt{15x + 1})(2 + \sqrt{3x + 1})(4 + \sqrt{15x + 1})}\over 
+		      {(2 - \sqrt{3x + 1})(4 + \sqrt{15x + 1})(2 + \sqrt{3x + 1})}\)
+		      = \(\displaystyle{\lim_{x \to 1}}\) \((15 - 15x)\over {3 - 3x}\)\(\times\)\(2 + \sqrt{3x + 1}\over {4 + \sqrt{15x + 1}}\)
+		      = \(5\over 2\)</p><br>
+              <button class="c" onclick="window.location.href='/as/examples/limits-examples.html'">More Examples</button>
+              <button class="b" onclick="window.location.href='/as/questions/limits-questions.html'">Try Questions</button>
+            </blockquote><br>
+
+             <h2 id="subheading7" style="font-size:17px;text-align:left;border-top:1px outset lightgrey;"><br>(c) Limit when \(x \to \infty\)</h2> 
+
+            <p>(i) Divide by greatest power of x in numerator and denominator<br>(ii) Put x = \(1\over y\) and apply \(y \to 0\)<br><br>
+            </p>
+
+            <blockquote class="blockquote">
+              <p style="font-size:16px;font-family:lucida;text-align:left;"><span style="font-size:18px;font-family:georgia;text-align:left;color:#3498DB;">Example : </span>Evaluate : \(\displaystyle{\lim_{x \to \infty}}\) \(x^2 + x + 1\over {3x^2 + 2x - 5}\) </p>
+              <p style="font-size:16px;font-family:lucida;text-  align:left;"><span style="font-size:18px;font-family:georgia;text-align:left; color:#3498DB;">Solution : </span>
+              \(\displaystyle{\lim_{x \to \infty}}\)\(x^2 + x + 1\over {3x^2 + 2x - 5}\) &nbsp; &nbsp; &nbsp; (\(\infty\over \infty\) form)<br><br>Put x = \(1\over y\)<br><br>Limit = \(\displaystyle{\lim_{y \to 0}}\) \(1 + y + y^2\over {3 + 2y - 5y^2}\) = \(1\over 3\)</p><br>
+            </blockquote><br>
+            
+            <button class="prev" onclick="window.location.href='/as/permutation-combination1.html'">PREV</button>
+            <button class="next" onclick="window.location.href='/as/limits1.html'">NEXT</button>
+            <br>
+            </div>
+            </div>
+          </div> 
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="widget-sidebar">
+            <h5 class="sidebar-title">Contents</h5>
+            <div class="sidebar-content">
+              <ul class="list-sidebar">
+                <li>
+                  <a href="#heading" class="anchor">Limits</a>
+                </li>
+                <li>
+                  <a href="#subheading1" class="anchor">Left hand limit and Right hand limit of a function</a>
+                </li>
+                <li>
+                  <a href="#subheading2" class="anchor">Fundamental theorem on limits</a>
+                </li>
+                <li>
+                  <a href="#subheading3" class="anchor">Indeterminate Forms</a>
+                </li>
+                <li>
+                  <a href="#subheading4" class="anchor">General methods to be used to evaluate limits</a>
+                </li>
+                <li>
+                  <a href="#subheading5" class="anchor">Factorisation</a>
+                </li>
+                <li>
+                  <a href="#subheading6" class="anchor">Rationalization or double rationalization</a>
+                </li>
+                <li>
+                  <a href="#subheading7" class="anchor">Limit when \(x \to \infty\)</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <div id="search">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog-Single End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12" id="footer">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript">
+
+            // to top right away
+            if ( window.location.hash ) scroll(0,0);
+            // void some browsers issue
+            setTimeout( function() { scroll(0,0); }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.anchor').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top - 110
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if(window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top - 110
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+</body>
+</html>
+
